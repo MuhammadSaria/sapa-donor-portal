@@ -1,0 +1,224 @@
+<apex:page controller="AnnualTaxReceiptPDFbatchController"
+           renderAs="pdf"
+           showHeader="false"
+           applyHtmlTag="false"
+           applyBodyTag="false"
+           sidebar="false">
+
+<html>
+<head>
+<style type="text/css">
+    @page {
+        size: A4;
+        margin: 15mm 15mm; 
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #000;
+        line-height: 1.4;
+    }
+
+    /* --- PAGE BREAK LOGIC FIXED --- */
+    .page-break {
+        /* Changed to break BEFORE content */
+        page-break-before: always;
+    }
+
+    /* Prevents a blank page from appearing before the FIRST receipt */
+    .page-break:first-child {
+        page-break-before: avoid;
+    }
+
+    /* --- Logo Section --- */
+    .logo-section {
+        width: 100%;
+        text-align: center;
+        margin-top: 0px; 
+        margin-bottom: 20px;
+    }
+
+    .logo-table {
+        margin: 0 auto;
+    }
+    
+    .logo-img-cell {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .header-row {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .donor-info {
+        float: left;
+        width: 60%;
+    }
+
+    .date-info {
+        float: right;
+        width: 35%;
+        text-align: right;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    /* Table Styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    th {
+        text-align: left;
+        border-bottom: 2px solid #000; 
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    td {
+        padding: 8px 5px; 
+        border-bottom: 1px solid #000; 
+        vertical-align: top;
+    }
+
+    .amount-col {
+        text-align: right;
+        width: 15%;
+    }
+
+    /* Total Row Styling */
+    .total-row td {
+        border-top: 2px solid #000; 
+        border-bottom: none;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    .legal-text {
+        margin-top: 30px;
+        font-size: 11px;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+        color: #555;
+        padding-bottom: 10px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<apex:repeat value="{!ListWrapperAccount}" var="wrap">
+
+    <div class="page-break">
+
+        <div class="logo-section">
+            <table class="logo-table">
+                <tr>
+                    <td class="logo-img-cell" style="border:none;">
+                         <apex:image value="{!$Resource.ReceiptLogo}" height="100" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="header-row">
+            <div class="donor-info">
+    <strong>{!IF(ISBLANK(wrap.acc.Secondary_Full_Name__c), wrap.acc.Name, wrap.acc.Name & ' & ' & wrap.acc.Secondary_Full_Name__c)}</strong><br/>
+    <apex:outputText value="{!wrap.accAddress}" escape="false"/>
+</div>
+
+            <div class="date-info">
+                <apex:outputText value="{!formattedGenerationDate}" />
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div style="margin-top: 30px;">
+    Dear {!IF(ISBLANK(wrap.acc.Secondary_Full_Name__c), wrap.acc.Name, wrap.acc.Name & ' & ' & wrap.acc.Secondary_Full_Name__c)},<br/><br/>
+    On behalf of our organization, thank you so much for your generous contributions:
+</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Date</th>
+                    <th class="amount-col">Amount</th>
+                    <th style="width: 25%; padding-left:15px;">Donation ID</th>
+                    <th style="width: 25%;">Payment Method</th>
+                </tr>
+            </thead>
+            <tbody>
+                <apex:repeat value="{!wrap.donList}" var="don">
+                    <tr>
+                        <td>
+                            <apex:outputText value="{0,date,MMMM d, yyyy}">
+                                <apex:param value="{!don.TransactionDate}" />
+                            </apex:outputText>
+                        </td>
+                        <td class="amount-col">
+                            <apex:outputText value="{0,number,$#,##0.00}">
+                                <apex:param value="{!don.OriginalAmount}" />
+                            </apex:outputText>
+                        </td>
+                        <td style="padding-left:15px;">{!don.Receipt_Number__c}</td>
+                        <td>{!don.PaymentMethod}</td>
+                    </tr>
+                </apex:repeat>
+
+                <tr class="total-row">
+                    <td style="text-align: left;">Total:</td>
+                    <td class="amount-col">
+                        <apex:outputText value="{0,number,$#,##0.00}">
+                            <apex:param value="{!wrap.TotalAmount}" />
+                        </apex:outputText>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="legal-text">
+            No goods or services were provided in exchange for this donation. 
+            Therefore, the full amount of your contribution is tax-deductible to the extent allowed by law. 
+            Please retain this receipt for your records.
+            <br/><br/>
+
+            SAPA Tax Identification Number: <strong>83-3464851</strong>
+            <br/><br/>
+
+            The Sudanese American Physicians Association is a 501(c)(3) nonprofit organization. 
+            Contributions are deductible under section 170 of the Internal Revenue Code.
+            <br/><br/>
+
+            Thank you again for your support. Together, we are making a difference.
+        </div>
+
+        <div class="footer">
+            701 Commerce St Suite 500 Mailbox# 2044 Dallas, TX 75202, USA. Dallas<br/>
+            1-888-406-4029 | donorcare@sapa-usa.org
+        </div>
+
+    </div>
+
+</apex:repeat>
+
+</body>
+</html>
+</apex:page>

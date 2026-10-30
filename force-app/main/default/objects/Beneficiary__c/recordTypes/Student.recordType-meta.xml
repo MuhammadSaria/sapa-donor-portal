@@ -1,0 +1,3496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student</fullName>
+    <active>true</active>
+    <label>Student</label>
+    <picklistValues>
+        <picklist>Accommodation_Type__c</picklist>
+        <values>
+            <fullName>Orphanage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugee camp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unspecified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With relatives</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Aspirations_2__c</picklist>
+        <values>
+            <fullName>Academic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accountant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archaeologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Army</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Astronaut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beautician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blacksmith</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Businessperson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carpenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chef</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil servant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dentist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diplomat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doll maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farmer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Aspirations_3__c</picklist>
+        <values>
+            <fullName>Academic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accountant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archaeologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Army</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Astronaut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beautician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blacksmith</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Businessperson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carpenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chef</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil servant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dentist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diplomat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doll maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farmer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Aspirations__c</picklist>
+        <values>
+            <fullName>a TV presenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a beautician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a blacksmith</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a businessperson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a carpenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a chef</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a civil servant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a dentist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a diplomat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a doll maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a farmer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a film director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a finance officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a footballer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a government employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a headmaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a journalist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a lawyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a mathematician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a nurse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a photographer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a pilot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a police officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a politician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a private employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a psychologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a scientist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a social worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a sportsperson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a teacher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a tour guide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a translator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a writer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an academic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an accountant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an actor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an archaeologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an architect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an army officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an artist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an astronaut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an electrician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an engineer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an entertainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an inventor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an islamic scholar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Attending_School__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Career_Question_1__c</picklist>
+        <values>
+            <fullName>What are your career goals and aspirations%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What motivates you to pursue this degree%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Why do you think you should be selected for this scholarship%3F</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Child_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Child_Type__c</picklist>
+        <values>
+            <fullName>Orphan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Bangladesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lebanon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pakistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pakistan-Kashmir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palestine-Gaza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yemen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Father_s_Cause_of_Death__c</picklist>
+        <values>
+            <fullName>a cardiac arrest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a fever</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a heart attack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an earthquake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an electrical current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an illness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>asthma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>bomb blast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>brain hemorrhage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>brain paralysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>burned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cancer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cholera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dengue fever</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>diabetes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>drowned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>earthquake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>electrical current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>epilepsy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fever</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>firing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>flood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>flooding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>heart failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>heat stroke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>hepatitis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>hypertension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>jaundice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>kidney failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>killed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>lightening strike</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>liver failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>lung failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>malaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>martyred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>murder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>murdered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>natural causes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>natural disaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>paralysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pneumonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>road accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>severe injury in rainstorm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>snakebite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>stroke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>suffocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>suicide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tetanus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tuberculosis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>typhoid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>unknown causes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>unspecified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>war</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Father_s_Death_Verified__c</picklist>
+        <values>
+            <fullName>Death Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>witness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Father_s_Status__c</picklist>
+        <values>
+            <fullName>Deceased</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Favourite_Subject__c</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Language</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Math</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Udecided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Has_Disability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Health_Condition__c</picklist>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hobbies_2__c</picklist>
+        <values>
+            <fullName>Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badminton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basketball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charity work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-curricular activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting coins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting hair bands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting pictures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting stamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coloring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colouring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cricket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doll making</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing%2Fpainting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flower arranging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Football</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gardening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handicrafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hockey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horse riding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning languages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nasheeds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performing arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poetry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciting Quran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sewing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stamp collecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Story writing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tennis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volleyball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watching films</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watching television</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hobbies_3__c</picklist>
+        <values>
+            <fullName>Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badminton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basketball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charity work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-curricular activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting coins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting hair bands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting pictures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting stamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collecting toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coloring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colouring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cricket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doll making</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing%2Fpainting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flower arranging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Football</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gardening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handicrafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hockey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horse riding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning languages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nasheeds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performing arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poetry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciting Quran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sewing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stamp collecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Story writing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swimming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tennis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volleyball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watching films</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watching television</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hobbies__c</picklist>
+        <values>
+            <fullName>arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>athletics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>badminton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>basketball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>board games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>charity work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>co-curricular activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>collecting cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>collecting coins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>collecting hair bands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>collecting pictures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>collecting stamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>collecting toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>coloring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>colouring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>computers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cooking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cricket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>debating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doll making</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>drama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>drawing%2Fpainting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>flower arranging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>football</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>gardening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>handicrafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>hiking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>hockey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>horse riding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>knitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>learning languages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>mathematics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>meeting friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>nasheeds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>performing arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>playing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>playing games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>poetry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>reading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>reciting Quran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>riding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sewing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>stamp collecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>story writing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>studying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>swimming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tennis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>volleyball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>walking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>watching films</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>watching television</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>writing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inactivation_reason__c</picklist>
+        <values>
+            <fullName>Child got sick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Died</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped out of school</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moved home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moved school</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over 18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsponsored - too old to sponsor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language_2__c</picklist>
+        <values>
+            <fullName>Acehnese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Afrikaans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albanian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amharic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assamese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azeri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balochi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bambara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bao%27an</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bengali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosnian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brahui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chechen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chichewa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dogri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hausa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kahsmiri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lebanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandinka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mewati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirpuri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nepalese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oromo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pahari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pashto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pothohari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saraiki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sindhi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinhala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swahili</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tajik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuareg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urdu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uzbek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wolof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xhosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yoruba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zarma</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language_3__c</picklist>
+        <values>
+            <fullName>Acehnese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Afrikaans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albanian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amharic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assamese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azeri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balochi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bambara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bao%27an</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bengali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosnian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brahui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chechen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chichewa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dogri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hausa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kahsmiri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lebanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandinka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mewati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirpuri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nepalese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oromo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pahari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pashto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pothohari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saraiki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sindhi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinhala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swahili</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tajik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuareg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urdu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uzbek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wolof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xhosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yoruba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zarma</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language__c</picklist>
+        <values>
+            <fullName>Acehnese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Afrikaans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albanian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amharic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assamese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azeri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balochi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bambara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bao%27an</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bengali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosnian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brahui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chechen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chichewa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dogri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hausa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kahsmiri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lebanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandinka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mewati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirpuri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nepalese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oromo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pahari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pashto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pothohari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saraiki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sindhi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinhala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swahili</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tajik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuareg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urdu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uzbek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wolof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xhosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yoruba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zarma</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Means_of_Support__c</picklist>
+        <values>
+            <fullName>charitable donations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>community support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>family income support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>family support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>farming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>friends support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>handouts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>neighbours support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>refugee allowance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>savings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>temporary work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>unspecified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mother_s_Death_Verified__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Witness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mother_s_Status__c</picklist>
+        <values>
+            <fullName>Alive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Widow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivation_Question_2__c</picklist>
+        <values>
+            <fullName>What are your career goals and aspirations%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What motivates you to pursue this degree%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Why do you think you should be selected for this scholarship%3F</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>My_Favourite_Colour__c</picklist>
+        <values>
+            <fullName>Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>My_Favourite_Food__c</picklist>
+        <values>
+            <fullName>Chocolate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eggs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Orphan_Guardian_Relationship__c</picklist>
+        <values>
+            <fullName>adoptive father</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>aunt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>brother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>brother-in-law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cousin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>family friend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>father</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>grandfather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>grandmother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>mother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>neighbour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>orphan worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sister</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>stepbrother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>stepmother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>teacher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>uncle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>unspecified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Past_Education_Level__c</picklist>
+        <values>
+            <fullName>Intermediate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matriculation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resident__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>School_Public_for_profiles_reports__c</picklist>
+        <values>
+            <fullName>Government School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ  Foundation School</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>School__c</picklist>
+        <values>
+            <fullName>READ Foundation College Patehka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Poona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Ratta Gala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Rera %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Rera %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Sarsawa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Sehnsa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Sehnsa %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Smahni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation College Sroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation Girls High School Noor Jamal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation Montessori School Fatta Bhand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation Montessori School Noor Jamal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Abbasspur %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Abbasspur %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Abdullahpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Academy Muzaffarabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Afzalpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Ali Baig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Aliot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Ambor Boys %28Refugee Camp%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Ambor Girls %28Refugee Camp%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Anderlla Kotera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Anohi Sarhota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Antlian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Arja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Arlian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Artakha Awan Patti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Awanabad %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Awanabad %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Badhial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Badhiar Bakalan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Badyar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bagh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bagh %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bagh %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bagh City %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Baghser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Baisa Kalan Hazara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bandala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bandi %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bandi Bakalan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bangoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bani Minhasan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bani Pasari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Banjonsa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Banjonsan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Baral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Barali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Barhing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Barnala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Barnala %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Barsali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Baseen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Basnara %28Refugee Camp%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Basnata Khairabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Basnata Khairabad %28duplicate%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bat Bani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bat Bani %28duplicate%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Batlian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Beer Pani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bees Bagla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bethak Awanabad %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bethak Awanabad %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bhara Kahu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bhial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bhimber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bhimber Bians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bhimber Gharbi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bhimber Gharbi %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bhimber Rajani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bindli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Brahtla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Broh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Bugna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chahawla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chahi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chak Barmang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chak Rawalakot %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chak Rawalakot %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chakar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chakar %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chakhama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chaknoor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chakothi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chakswari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chamankot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chambanar %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chambanar %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chanari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chanari %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Changpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chaprian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Charhoi %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Charhoi %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Charhoi %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Charsadda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Charsadda %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Charsadda %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chathian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chathian %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chatrorah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chattar No%2E 2 %28Refugee Camp%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chehla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chirala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chirhan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chitra Topi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chitterpari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chongra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chota Gala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chowki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chowki %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chowki Moong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Chur Chak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School City Campus Kotli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dabsi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dadyal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dal Bandala %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dal Bandala %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Damot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Danda Dheri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dandli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dangali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Danna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dar Bandala %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Darkooti Cross</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Datote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Devi Gali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhak Thub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhal Kaka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhal Qazian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhal Qazian Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhamawa Kassgumma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhannan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhanni Bakalan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhanwan No%2E 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhanwan No%2E 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhar Dharach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dharay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dheri Sahibzadaian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dheri Wattan %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dheri Wattan %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dheri Wattan %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhingawali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhirkot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhirkot %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhirkot %28High%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhirkot %28Middle%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhirkot %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhok Chachan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhok Lilian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dhundar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dobay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dub Dhalla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Dudhpura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Eidgah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School F%2F1 Mirpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Fafrila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gahi Jaba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gala Samiar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Galota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Garhi Dupatta %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Garhi Dupatta %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Garhi Dupatta %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Garhoon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gawan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gehl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Ghaniabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gharthama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Ghazipur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gilgit %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gilgit %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Girls College Kotli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gohar Gali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Goharabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Goharabad %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Goi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gojra %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gojra %28Girls%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gojra %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gonsa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Goorah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Goorah %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gori</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gorikot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gudai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gujar Bandi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gujar Bandi %28Primary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gulhar Colony</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Gulpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Hadora Bandi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Hajeera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Haji Pura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Hans Chowki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Hari Gehl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Hari Gehl %28Middle%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Hariola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Haripur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>READ Foundation School Hattian Bala %28Boys%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Selection_Question_3__c</picklist>
+        <values>
+            <fullName>What are your career goals and aspirations%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What motivates you to pursue this degree%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Why do you think you should be selected for this scholarship%3F</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sponsorship_Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sponsorship_Status__c</picklist>
+        <values>
+            <fullName>Reserved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Sponsored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsponsored</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Standard__c</picklist>
+        <values>
+            <fullName>Average</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unspecified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Term_Type__c</picklist>
+        <values>
+            <fullName>Semester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transport__c</picklist>
+        <values>
+            <fullName>by bicycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>by bus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>by car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>by motorcycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>walking</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zakat_Ineligible_Reason__c</picklist>
+        <values>
+            <fullName>Guardian Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Muslim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sayyid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zakat_Ineligible__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- EndDateOnly, Terms, TemporaryTerms, or StartDateChange. Salesforce calculates this value; staff do not edit it. --></help>
+    <label><!-- Requested Change Mode --></label>
+    <name>Requested_Change_Mode__c</name>
+    <picklistValues>
+        <masterLabel>End Date Only</masterLabel>
+        <translation><!-- End Date Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Date Change</masterLabel>
+        <translation><!-- Start Date Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary Terms</masterLabel>
+        <translation><!-- Temporary Terms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terms</masterLabel>
+        <translation><!-- Terms --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<template>
+    <div class="sapa-shell">
+        <div class="sapa-shell__top-strip"></div>
+        <header class="sapa-shell__header">
+            <img src={logoUrl} alt="Sudanese American Physicians Association" class="sapa-shell__logo" />
+        </header>
+        <main class="sapa-shell__content" style={contentStyle}>
+            <slot></slot>
+        </main>
+        <footer class="sapa-shell__footer">
+            <p class="sapa-shell__footer-name">Sudanese American Physicians Association</p>
+            <a href="https://sapa-usa.org" class="sapa-shell__footer-link">sapa-usa.org</a>
+        </footer>
+    </div>
+</template>

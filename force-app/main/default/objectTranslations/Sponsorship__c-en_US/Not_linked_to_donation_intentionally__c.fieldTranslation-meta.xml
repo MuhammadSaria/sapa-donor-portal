@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Not linked to donation intentionally --></label>
+    <name>Not_linked_to_donation_intentionally__c</name>
+</CustomFieldTranslation>

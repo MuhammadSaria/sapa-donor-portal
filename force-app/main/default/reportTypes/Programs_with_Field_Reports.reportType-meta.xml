@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject></baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Programs with Field Reports</description>
+    <label>Programs with Field Reports</label>
+    <sections>
+        <masterLabel>Programs</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Field reports</masterLabel>
+    </sections>
+</ReportType>

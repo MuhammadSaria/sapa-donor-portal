@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hobbies_2__c</fullName>
+    <label>Hobbies 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arts</fullName>
+                <default>false</default>
+                <label>Arts</label>
+            </value>
+            <value>
+                <fullName>Athletics</fullName>
+                <default>false</default>
+                <label>Athletics</label>
+            </value>
+            <value>
+                <fullName>Badminton</fullName>
+                <default>false</default>
+                <label>Badminton</label>
+            </value>
+            <value>
+                <fullName>Basketball</fullName>
+                <default>false</default>
+                <label>Basketball</label>
+            </value>
+            <value>
+                <fullName>Board games</fullName>
+                <default>false</default>
+                <label>Board games</label>
+            </value>
+            <value>
+                <fullName>Charity work</fullName>
+                <default>false</default>
+                <label>Charity work</label>
+            </value>
+            <value>
+                <fullName>Co-curricular activities</fullName>
+                <default>false</default>
+                <label>Co-curricular activities</label>
+            </value>
+            <value>
+                <fullName>Collecting cards</fullName>
+                <default>false</default>
+                <label>Collecting cards</label>
+            </value>
+            <value>
+                <fullName>Collecting coins</fullName>
+                <default>false</default>
+                <label>Collecting coins</label>
+            </value>
+            <value>
+                <fullName>Collecting hair bands</fullName>
+                <default>false</default>
+                <label>Collecting hair bands</label>
+            </value>
+            <value>
+                <fullName>Collecting pictures</fullName>
+                <default>false</default>
+                <label>Collecting pictures</label>
+            </value>
+            <value>
+                <fullName>Collecting stamps</fullName>
+                <default>false</default>
+                <label>Collecting stamps</label>
+            </value>
+            <value>
+                <fullName>Collecting toys</fullName>
+                <default>false</default>
+                <label>Collecting toys</label>
+            </value>
+            <value>
+                <fullName>Coloring</fullName>
+                <default>false</default>
+                <label>Coloring</label>
+            </value>
+            <value>
+                <fullName>Colouring</fullName>
+                <default>false</default>
+                <label>Colouring</label>
+            </value>
+            <value>
+                <fullName>Computer</fullName>
+                <default>false</default>
+                <label>Computer</label>
+            </value>
+            <value>
+                <fullName>Cooking</fullName>
+                <default>false</default>
+                <label>Cooking</label>
+            </value>
+            <value>
+                <fullName>Cricket</fullName>
+                <default>false</default>
+                <label>Cricket</label>
+            </value>
+            <value>
+                <fullName>Cycling</fullName>
+                <default>false</default>
+                <label>Cycling</label>
+            </value>
+            <value>
+                <fullName>Debating</fullName>
+                <default>false</default>
+                <label>Debating</label>
+            </value>
+            <value>
+                <fullName>Doll making</fullName>
+                <default>false</default>
+                <label>Doll making</label>
+            </value>
+            <value>
+                <fullName>Drama</fullName>
+                <default>false</default>
+                <label>Drama</label>
+            </value>
+            <value>
+                <fullName>Drawing/painting</fullName>
+                <default>false</default>
+                <label>Drawing/painting</label>
+            </value>
+            <value>
+                <fullName>Fishing</fullName>
+                <default>false</default>
+                <label>Fishing</label>
+            </value>
+            <value>
+                <fullName>Flower arranging</fullName>
+                <default>false</default>
+                <label>Flower arranging</label>
+            </value>
+            <value>
+                <fullName>Football</fullName>
+                <default>false</default>
+                <label>Football</label>
+            </value>
+            <value>
+                <fullName>Games</fullName>
+                <default>false</default>
+                <label>Games</label>
+            </value>
+            <value>
+                <fullName>Gardening</fullName>
+                <default>false</default>
+                <label>Gardening</label>
+            </value>
+            <value>
+                <fullName>Handicrafts</fullName>
+                <default>false</default>
+                <label>Handicrafts</label>
+            </value>
+            <value>
+                <fullName>Hockey</fullName>
+                <default>false</default>
+                <label>Hockey</label>
+            </value>
+            <value>
+                <fullName>Horse riding</fullName>
+                <default>false</default>
+                <label>Horse riding</label>
+            </value>
+            <value>
+                <fullName>Knitting</fullName>
+                <default>false</default>
+                <label>Knitting</label>
+            </value>
+            <value>
+                <fullName>Learning languages</fullName>
+                <default>false</default>
+                <label>Learning languages</label>
+            </value>
+            <value>
+                <fullName>Meeting friends</fullName>
+                <default>false</default>
+                <label>Meeting friends</label>
+            </value>
+            <value>
+                <fullName>Nasheeds</fullName>
+                <default>false</default>
+                <label>Nasheeds</label>
+            </value>
+            <value>
+                <fullName>Performing arts</fullName>
+                <default>false</default>
+                <label>Performing arts</label>
+            </value>
+            <value>
+                <fullName>Pets</fullName>
+                <default>false</default>
+                <label>Pets</label>
+            </value>
+            <value>
+                <fullName>Playing</fullName>
+                <default>false</default>
+                <label>Playing</label>
+            </value>
+            <value>
+                <fullName>Poetry</fullName>
+                <default>false</default>
+                <label>Poetry</label>
+            </value>
+            <value>
+                <fullName>Reading</fullName>
+                <default>false</default>
+                <label>Reading</label>
+            </value>
+            <value>
+                <fullName>Reciting Quran</fullName>
+                <default>false</default>
+                <label>Reciting Quran</label>
+            </value>
+            <value>
+                <fullName>Riding</fullName>
+                <default>false</default>
+                <label>Riding</label>
+            </value>
+            <value>
+                <fullName>Sewing</fullName>
+                <default>false</default>
+                <label>Sewing</label>
+            </value>
+            <value>
+                <fullName>Sports</fullName>
+                <default>false</default>
+                <label>Sports</label>
+            </value>
+            <value>
+                <fullName>Stamp collecting</fullName>
+                <default>false</default>
+                <label>Stamp collecting</label>
+            </value>
+            <value>
+                <fullName>Story writing</fullName>
+                <default>false</default>
+                <label>Story writing</label>
+            </value>
+            <value>
+                <fullName>Studying</fullName>
+                <default>false</default>
+                <label>Studying</label>
+            </value>
+            <value>
+                <fullName>Swimming</fullName>
+                <default>false</default>
+                <label>Swimming</label>
+            </value>
+            <value>
+                <fullName>Tennis</fullName>
+                <default>false</default>
+                <label>Tennis</label>
+            </value>
+            <value>
+                <fullName>Travel</fullName>
+                <default>false</default>
+                <label>Travel</label>
+            </value>
+            <value>
+                <fullName>Volleyball</fullName>
+                <default>false</default>
+                <label>Volleyball</label>
+            </value>
+            <value>
+                <fullName>Watching films</fullName>
+                <default>false</default>
+                <label>Watching films</label>
+            </value>
+            <value>
+                <fullName>Watching television</fullName>
+                <default>false</default>
+                <label>Watching television</label>
+            </value>
+            <value>
+                <fullName>Writing</fullName>
+                <default>false</default>
+                <label>Writing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

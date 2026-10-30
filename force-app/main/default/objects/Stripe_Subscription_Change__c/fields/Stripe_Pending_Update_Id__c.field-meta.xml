@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stripe_Pending_Update_Id__c</fullName>
+    <description>Stable support reference for a Stripe pending update, using its associated invoice when Stripe returns no separate ID.</description>
+    <externalId>false</externalId>
+    <label>Stripe Pending Update Reference</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

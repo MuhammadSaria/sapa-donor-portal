@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stripe_Price_Id__c</fullName>
+    <description>Price created by Stripe from the future phase inline price data.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Current Price after the future phase begins.</inlineHelpText>
+    <label>Stripe Price ID</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Father_s_Cause_of_Death__c</fullName>
+    <label>Father&apos;s Cause of Death</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>a cardiac arrest</fullName>
+                <default>false</default>
+                <label>a cardiac arrest</label>
+            </value>
+            <value>
+                <fullName>a fever</fullName>
+                <default>false</default>
+                <label>a fever</label>
+            </value>
+            <value>
+                <fullName>a heart attack</fullName>
+                <default>false</default>
+                <label>a heart attack</label>
+            </value>
+            <value>
+                <fullName>an accident</fullName>
+                <default>false</default>
+                <label>an accident</label>
+            </value>
+            <value>
+                <fullName>an earthquake</fullName>
+                <default>false</default>
+                <label>an earthquake</label>
+            </value>
+            <value>
+                <fullName>an electrical current</fullName>
+                <default>false</default>
+                <label>an electrical current</label>
+            </value>
+            <value>
+                <fullName>an illness</fullName>
+                <default>false</default>
+                <label>an illness</label>
+            </value>
+            <value>
+                <fullName>asthma</fullName>
+                <default>false</default>
+                <label>asthma</label>
+            </value>
+            <value>
+                <fullName>bomb blast</fullName>
+                <default>false</default>
+                <label>bomb blast</label>
+            </value>
+            <value>
+                <fullName>brain hemorrhage</fullName>
+                <default>false</default>
+                <label>brain hemorrhage</label>
+            </value>
+            <value>
+                <fullName>brain paralysis</fullName>
+                <default>false</default>
+                <label>brain paralysis</label>
+            </value>
+            <value>
+                <fullName>burned</fullName>
+                <default>false</default>
+                <label>burned</label>
+            </value>
+            <value>
+                <fullName>cancer</fullName>
+                <default>false</default>
+                <label>cancer</label>
+            </value>
+            <value>
+                <fullName>cholera</fullName>
+                <default>false</default>
+                <label>cholera</label>
+            </value>
+            <value>
+                <fullName>dengue fever</fullName>
+                <default>false</default>
+                <label>dengue fever</label>
+            </value>
+            <value>
+                <fullName>diabetes</fullName>
+                <default>false</default>
+                <label>diabetes</label>
+            </value>
+            <value>
+                <fullName>drowned</fullName>
+                <default>false</default>
+                <label>drowned</label>
+            </value>
+            <value>
+                <fullName>earthquake</fullName>
+                <default>false</default>
+                <label>earthquake</label>
+            </value>
+            <value>
+                <fullName>electrical current</fullName>
+                <default>false</default>
+                <label>electrical current</label>
+            </value>
+            <value>
+                <fullName>epilepsy</fullName>
+                <default>false</default>
+                <label>epilepsy</label>
+            </value>
+            <value>
+                <fullName>fever</fullName>
+                <default>false</default>
+                <label>fever</label>
+            </value>
+            <value>
+                <fullName>firing</fullName>
+                <default>false</default>
+                <label>firing</label>
+            </value>
+            <value>
+                <fullName>flood</fullName>
+                <default>false</default>
+                <label>flood</label>
+            </value>
+            <value>
+                <fullName>heart failure</fullName>
+                <default>false</default>
+                <label>heart failure</label>
+            </value>
+            <value>
+                <fullName>heat stroke</fullName>
+                <default>false</default>
+                <label>heat stroke</label>
+            </value>
+            <value>
+                <fullName>hepatitis</fullName>
+                <default>false</default>
+                <label>hepatitis</label>
+            </value>
+            <value>
+                <fullName>hypertension</fullName>
+                <default>false</default>
+                <label>hypertension</label>
+            </value>
+            <value>
+                <fullName>jaundice</fullName>
+                <default>false</default>
+                <label>jaundice</label>
+            </value>
+            <value>
+                <fullName>kidney failure</fullName>
+                <default>false</default>
+                <label>kidney failure</label>
+            </value>
+            <value>
+                <fullName>killed</fullName>
+                <default>false</default>
+                <label>killed</label>
+            </value>
+            <value>
+                <fullName>lightening strike</fullName>
+                <default>false</default>
+                <label>lightening strike</label>
+            </value>
+            <value>
+                <fullName>liver failure</fullName>
+                <default>false</default>
+                <label>liver failure</label>
+            </value>
+            <value>
+                <fullName>malaria</fullName>
+                <default>false</default>
+                <label>malaria</label>
+            </value>
+            <value>
+                <fullName>martyred</fullName>
+                <default>false</default>
+                <label>martyred</label>
+            </value>
+            <value>
+                <fullName>murder</fullName>
+                <default>false</default>
+                <label>murder</label>
+            </value>
+            <value>
+                <fullName>murdered</fullName>
+                <default>false</default>
+                <label>murdered</label>
+            </value>
+            <value>
+                <fullName>natural causes</fullName>
+                <default>false</default>
+                <label>natural causes</label>
+            </value>
+            <value>
+                <fullName>paralysis</fullName>
+                <default>false</default>
+                <label>paralysis</label>
+            </value>
+            <value>
+                <fullName>pneumonia</fullName>
+                <default>false</default>
+                <label>pneumonia</label>
+            </value>
+            <value>
+                <fullName>road accident</fullName>
+                <default>false</default>
+                <label>road accident</label>
+            </value>
+            <value>
+                <fullName>severe injury in rainstorm</fullName>
+                <default>false</default>
+                <label>severe injury in rainstorm</label>
+            </value>
+            <value>
+                <fullName>snakebite</fullName>
+                <default>false</default>
+                <label>snakebite</label>
+            </value>
+            <value>
+                <fullName>stroke</fullName>
+                <default>false</default>
+                <label>stroke</label>
+            </value>
+            <value>
+                <fullName>suffocation</fullName>
+                <default>false</default>
+                <label>suffocation</label>
+            </value>
+            <value>
+                <fullName>suicide</fullName>
+                <default>false</default>
+                <label>suicide</label>
+            </value>
+            <value>
+                <fullName>tetanus</fullName>
+                <default>false</default>
+                <label>tetanus</label>
+            </value>
+            <value>
+                <fullName>tuberculosis</fullName>
+                <default>false</default>
+                <label>tuberculosis</label>
+            </value>
+            <value>
+                <fullName>typhoid</fullName>
+                <default>false</default>
+                <label>typhoid</label>
+            </value>
+            <value>
+                <fullName>unknown causes</fullName>
+                <default>false</default>
+                <label>unknown causes</label>
+            </value>
+            <value>
+                <fullName>unspecified</fullName>
+                <default>false</default>
+                <label>unspecified</label>
+            </value>
+            <value>
+                <fullName>war</fullName>
+                <default>false</default>
+                <label>war</label>
+            </value>
+            <value>
+                <fullName>flooding</fullName>
+                <default>false</default>
+                <label>flooding</label>
+            </value>
+            <value>
+                <fullName>lung failure</fullName>
+                <default>false</default>
+                <label>lung failure</label>
+            </value>
+            <value>
+                <fullName>natural disaster</fullName>
+                <default>false</default>
+                <label>natural disaster</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Orphan Guardian Relationship --></label>
+    <name>Orphan_Guardian_Relationship__c</name>
+    <picklistValues>
+        <masterLabel>adoptive father</masterLabel>
+        <translation><!-- adoptive father --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>aunt</masterLabel>
+        <translation><!-- aunt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>brother</masterLabel>
+        <translation><!-- brother --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>brother-in-law</masterLabel>
+        <translation><!-- brother-in-law --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cousin</masterLabel>
+        <translation><!-- cousin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>family friend</masterLabel>
+        <translation><!-- family friend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>father</masterLabel>
+        <translation><!-- father --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>grandfather</masterLabel>
+        <translation><!-- grandfather --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>grandmother</masterLabel>
+        <translation><!-- grandmother --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mother</masterLabel>
+        <translation><!-- mother --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>neighbour</masterLabel>
+        <translation><!-- neighbour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>orphan worker</masterLabel>
+        <translation><!-- orphan worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sister</masterLabel>
+        <translation><!-- sister --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>stepbrother</masterLabel>
+        <translation><!-- stepbrother --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>stepmother</masterLabel>
+        <translation><!-- stepmother --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>teacher</masterLabel>
+        <translation><!-- teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>uncle</masterLabel>
+        <translation><!-- uncle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unspecified</masterLabel>
+        <translation><!-- unspecified --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

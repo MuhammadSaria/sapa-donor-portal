@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- In Fundraise Up, this is the designation, but in Salesforce, we will map this for the Intention --></help>
+    <label><!-- FUp Intention (Designation) --></label>
+    <name>FUp_Intention_Designation__c</name>
+</CustomFieldTranslation>

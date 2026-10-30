@@ -1,0 +1,342 @@
+<apex:page renderAs="pdf" cache="false" applyHtmlTag="false" applyBodyTag="false" controller="ContactOpportunitiesController" standardStylesheets="false" showHeader="false" sidebar="false">
+
+
+<head>
+    <style>
+        @page { 
+        size: letter portrait;
+        
+        margin-top: 150px;
+        margin-bottom: 200px;
+        
+        @top-left {
+        content: element(header_left);
+        }
+        
+        @top-center {
+        content: element(header_center);
+        }
+        
+        @top-right {
+        content: element(header_right);
+        }
+        
+        @bottom-left {
+        content: element(footer_left);
+        }
+        
+        @bottom-center {
+        content: element(footer_center);
+        }
+        
+        @bottom-right {
+        content: element(footer_right);
+        }
+        }    
+        
+        table a
+        {
+        page-break-before: auto;
+        }    
+        
+        .header_left {
+        text-align: left;
+        position: running(header_left);
+        
+        padding:5px 0px 10px 0px; 
+        margin-left: 8px; 
+        }
+        
+        .header_center{
+        text-align: center;
+        position: running(header_center);  
+        }
+        
+        .header_right {
+        
+        position: running(header_right);
+        padding: -82px 0px 0px 0px;
+        
+        margin: 0px 0px 0px 0px; 
+        text-align:center; 
+        font-family: calibri, Arial, Helvetica, sans-serif; 
+        }
+        
+        .header_line {
+        
+        border-bottom:0px solid #5E002F;
+        width="200%";
+        
+        }
+        
+        ul {  margin-top:0px;
+        margin-bottom:08px; 
+        }
+        .footer_center
+        { 
+        position: running(footer_center);
+        border:1px solid #fff;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+        padding:0px 0px 0px 0px;
+        height:20px;
+        } 
+        
+        .Row {
+        display: table;
+        width: 100%; /*Optional*/
+        table-layout: fixed; /*Optional*/
+        border-spacing: 10px; /*Optional*/
+        }
+        .Column {
+        display: table-cell;
+        //background-color: red; /*Optional*/
+        }    
+        
+        .pageNumber:before {
+        content: counter(page); 
+        }
+        
+        .pageCount:before {
+        content: counter(pages);  
+        }
+        
+        div.a {list-style-type: disc;
+        }
+        .imageElement2 { 
+        margin-left: -60px;
+        margin-top: -60px;
+        }
+    </style>        
+    <title>Untitled Page</title>
+</head>
+
+    
+    <div class="header_center">
+        <img src="{!URLFOR($Resource.SAPA_HeaderImage)}" width="270px" height="130px" />
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_center">
+        <img src="{!URLFOR($Resource.DonationPDFfooter)}" width="100%" />
+    </div>
+
+
+   
+
+
+<br/>
+<br/>
+<br/>
+<div class="content">
+    <div class="Row">
+        <div class="Column">
+           <table align="left" style="font-family: Arial, sans-serif; margin-top: -60px;">
+    <tr>
+        <td style="text-align:left; font-size:13px;">
+            <i><b>
+    {!IF(ISBLANK(Account.Secondary_Full_Name__c), Account.Name, Account.Name & ' & ' & Account.Secondary_Full_Name__c)}
+</b></i><br/>
+
+            <apex:outputText value="{!accAddress}" escape="false"/>
+        </td>
+    </tr>
+</table>
+        </div>
+        <div class="Column">
+            
+        </div>
+        <div class="Column">
+            <table align="left" class="FontStyle" style="font-family: Arial, sans-serif; margin-top: -60px">
+                <tr>
+                    <td>
+                        <I><apex:outputLabel value="Donor ID:" style="text-align:left; Font-weight:bold; font-size:13px;"/></I><br/>
+                    </td>
+                    <td>
+                        &nbsp;&nbsp;<I><apex:outputLabel value="{!Account.Donor_ID__c}" style="text-align:left; font-size:13px;"/></I><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <I><apex:outputLabel value="Date" style="text-align:left; Font-weight:bold; font-size:13px;"/></I><br/>
+                    </td>
+                    <td>
+                        &nbsp;&nbsp;<I><apex:outputLabel value="{!modifyDate}" style="text-align:left; font-size:13px;"/></I><br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>   
+    
+    <table align="center"  style="font-family: Arial, sans-serif; margin-top:30px">
+        <tr>
+            <td align="center">
+                <I><apex:outputLabel value="Statement of donations made in USD between {!startDate} and {!endDate}" style="Font-weight:bold;font-size:18px;"/></I><br/>
+            </td>
+        </tr>
+    </table>
+    <br/><br/>
+    <table cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td valign="top" width="20%" align="left" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; Font-weight:bold; padding:3px 1px;"><font face="Arial">Fund</font></td>
+            <td valign="top" width="20%" align="left" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; Font-weight:bold; padding:3px 1px;"><font face="Arial">Intention</font></td>
+            <td valign="top" width="20%" align="left" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; Font-weight:bold; padding:3px 1px;"><font face="Arial">Location</font></td>
+            <!--<td valign="top" width="10%" align="left" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:10px; Font-weight:bold; padding:3px 1px;"><font face="Arial">Sponsorship</font></td>-->
+            <td valign="top" width="15%" align="center" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; Font-weight:bold; padding:3px 1px;"><font face="Arial">Payment Type</font></td>
+            <td  valign="top" width="15%" align="center" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; Font-weight:bold; padding:3px 1px;"><font face="Arial">Date</font></td>            
+            <td valign="top" width="10%" align="center" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; Font-weight:bold; padding:3px 1px;"><font face="Arial">Amount</font></td>                  
+            
+        </tr>
+        
+        <apex:repeat value="{!ListWrapperAccount}" var="wrc">
+            <tr>
+                <td valign="top" width="20%" align="left" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; padding:3px 1px;">{!wrc.GAU.GiftDesignation.Name}</td>
+                <td valign="top" width="20%" align="left" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; padding:3px 1px;">{!wrc.GAU.Intention__c}</td>
+                <td valign="top" width="20%" align="left" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; padding:3px 1px;">{!wrc.GAU.Locations__c}</td>
+                <td valign="top" width="15%" align="center" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; padding:3px 1px;">{!wrc.opp.PaymentMethod}</td>
+                <td valign="top" width="15%" align="center" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; padding:3px 1px;">
+                    <apex:outputText value="{0,date,dd/MM/yyyy}">
+                        <apex:param value="{!wrc.opp.TransactionDate}" />
+                    </apex:outputText>
+                </td> 
+                <td valign="top" width="10%" align="center" style="font-family: calibri, Arial, Helvetica, sans-serif; font-size:12px; padding:3px 1px;">{!wrc.OppAmount}</td>
+                
+            </tr>
+        </apex:repeat>  
+        
+        <tr>
+            <td bgcolor="#C0C0C0" align="right"  colspan="9" style="border-top:1px solid #000000; border-bottom:1px solid #000000;">
+                <font face="Arial"><b></b> &nbsp;
+                </font></td>
+        </tr>
+    </table>
+    
+    <div class="Row">
+        <div class="Column">
+        </div>
+        <div class="Column">
+        </div>
+        <div class="Column">
+            <table cellspacing="0" cellpadding="0" width="100%" class="FontStyle" style="margin-top:50px" > 
+                <apex:outputText rendered="{!TotalSadaqah>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Sadaqah :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalSadaqah}                        
+                        </td>
+                    </tr>
+                </apex:outputText>  
+                
+                  <apex:outputText rendered="{!TotalSadaqahJariyah>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Sadaqah Jariyah :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalSadaqahJariyah}                        
+                        </td>
+                    </tr>
+                </apex:outputText> 
+                
+                
+                
+                
+                <apex:outputText rendered="{!TotalZakat>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Zakat :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalZakat}                        
+                        </td>
+                    </tr>
+                </apex:outputText>
+                <apex:outputText rendered="{!TotalGeneralDonation>0}">
+                    <tr>
+                        <td width="35%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total General Donation :                        
+                        </td>
+                        <td width="20%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalGeneralDonation}                         
+                        </td>
+                    </tr>
+                </apex:outputText>
+                <apex:outputText rendered="{!TotalLillah>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Lillah :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalLillah}                        
+                        </td>
+                    </tr>
+                </apex:outputText>
+                <apex:outputText rendered="{!TotalKaffara>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Kaffara :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalKaffara}                        
+                        </td>
+                    </tr>
+                </apex:outputText>
+                <apex:outputText rendered="{!TotalInterest>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Interest :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalInterest}                        
+                        </td>
+                    </tr>
+                </apex:outputText>
+                <apex:outputText rendered="{!TotalFidya>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Fidya :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalFidya}                        
+                        </td>
+                    </tr>
+                </apex:outputText>     
+                
+                <apex:outputText rendered="{!TotalQurbani>0}">
+                    <tr>
+                        <td width="45%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            Total Qurbani :                        
+                        </td>
+                        <td width="15%" style="text-align:left; font-weight:bold;font-size:15px;">
+                            &#36; {!TotalQurbani}                        
+                        </td>
+                    </tr>
+                </apex:outputText> 
+                
+               
+                
+                
+                     <tr>
+                        <td width="60%" colspan="2" style="text-align:left; font-weight:bold;font-size:15px;">
+                            -----------------------------------------------                        
+                        </td>                        
+                    </tr>          
+                <tr>
+                    <td width="45%" style="text-align:left; Font-weight:bold;font-size:15px;">
+                        Grand Total :                        
+                    </td>
+                    <td width="15%" style="text-align:left; Font-weight:bold;font-size:15px;">
+                        &#36; {!GrandTotal}                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br/>
+</div>
+
+</apex:page>

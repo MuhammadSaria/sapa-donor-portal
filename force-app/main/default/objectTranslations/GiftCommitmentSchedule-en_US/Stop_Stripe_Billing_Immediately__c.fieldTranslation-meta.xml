@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When selected for a future cadence change, Stripe stops charging now and resumes with the new cadence on the effective date. --></help>
+    <label><!-- Stop Stripe Billing Immediately --></label>
+    <name>Stop_Stripe_Billing_Immediately__c</name>
+</CustomFieldTranslation>

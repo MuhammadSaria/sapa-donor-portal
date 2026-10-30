@@ -1,0 +1,8 @@
+<template>
+    <div class="status-page" role="status">
+        <div class={iconClass} aria-hidden="true">{copy.icon}</div>
+        <h1 class="status-page__heading">{heading}</h1>
+        <p if:true={copy.body} class="status-page__body">{copy.body}</p>
+        <a if:true={copy.showHomeLink} href="https://sapa-usa.org" class="status-page__link">sapa-usa.org</a>
+    </div>
+</template>

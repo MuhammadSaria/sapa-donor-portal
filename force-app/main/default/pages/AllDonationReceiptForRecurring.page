@@ -1,0 +1,358 @@
+<apex:page controller="AllReceiptsPDFControllerForRecurring" renderAs="pdf" showHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 13px; 
+        }
+
+        /* --- Colors --- */
+        .orange-bg {
+            background-color: #F87325 !important; 
+            color: white;
+            -webkit-print-color-adjust: exact !important;
+        }
+        
+        .orange-text {
+            color: #F87325;
+            font-weight: bold;
+        }
+
+        /* --- Top Bar --- */
+        .header-bar {
+            width: 100%;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* --- Logo Section --- */
+        .logo-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .logo-table {
+            margin: 0 auto;
+        }
+        
+        .logo-img-cell {
+            padding-right: 15px;
+            vertical-align: middle;
+        }
+
+        .receipt-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #F87325;
+            margin-bottom: 25px;
+        }
+
+        /* --- Main Box --- */
+        .main-box-container {
+            width: 90%;
+            margin: 0 auto 30px auto;
+            border: 1px solid #e0e0e0; 
+        }
+
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .main-table td {
+            vertical-align: top;
+            padding: 15px 20px;
+        }
+
+        .col-left {
+            width: 44.5%;
+            border-right: 1px solid #e0e0e0;
+        }
+        
+        .col-right {
+            width: 57%;
+        }
+
+        .section-header {
+            color: #F87325;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        /* --- Donor Info Box --- */
+        .donor-info-container {
+            width: 90%;
+            margin: 30px auto;
+            border: none; 
+        }
+
+        .donor-info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .donor-info-table td {
+            vertical-align: top;
+            padding: 15px 20px;
+        }
+
+        .donor-info-left {
+            width: 65%;
+            text-align: left;
+            line-height: 1.6;
+            border: none; 
+        }
+
+        .donor-info-right {
+            width: 35%;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .content-text {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Grey Background Row */
+        .grey-row {
+            background-color: #f5f5f5 !important;
+            -webkit-print-color-adjust: exact !important;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .grey-row td {
+             padding: 15px 20px;
+        }
+
+        .amount-text {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* --- Footer Notes --- */
+        .notes-container {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .note-p {
+            margin-bottom: 14px;
+        }
+
+        /* --- Fixed Footer --- */
+        .footer-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.6;
+            color: white;
+            background-color: #F87325;
+            padding: 5px 0 15px 0; 
+        }
+
+        .contact-bar {
+            font-size: 12px;
+            color: #fff; 
+            margin-bottom: 5px; 
+        }
+
+        .footer-text {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        /* --- Empty State Box --- */
+        .empty-state-box {
+            width: 80%;
+            margin: 60px auto;
+            padding: 40px 20px;
+            text-align: center;
+            border: 2px dashed #cccccc;
+            background-color: #fcfcfc;
+            border-radius: 8px;
+        }
+        
+        .empty-state-title {
+            color: #F87325;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .empty-state-desc {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="footer-bar orange-bg">
+         <div class="footer-text">
+        Thank You For Your Support.
+        </div>
+        <div class="contact-bar">
+            SAPA USA, 701 Commerce St Suite 500 Mailbox# 2044 Dallas, TX 75202 | 
+            donorcare@sapa.usa.org | 1-888-406-4029
+        </div>
+    </div>
+
+    <apex:outputPanel rendered="{!donations.size == 0}" layout="none">
+        <div class="header-bar orange-bg">
+            Recurring Donation Receipts
+        </div>
+
+        <div class="logo-section">
+            <table class="logo-table">
+                <tr>
+                    <td class="logo-img-cell">
+                        <img src="{!$Resource.ReceiptLogo}" height="100" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="empty-state-box">
+            <div class="empty-state-title">No Records Found</div>
+            <div class="empty-state-desc">
+                There are currently no recurring donations that require a paper receipt.<br/>
+                Please check back later.
+            </div>
+        </div>
+    </apex:outputPanel>
+
+    <apex:outputPanel rendered="{!donations.size > 0}" layout="none">
+        
+        <apex:variable var="rowNum" value="{!0}" />
+
+        <apex:repeat value="{!donations}" var="donation">
+            
+            <div style="{!IF(rowNum > 0, 'page-break-before: always;', '')}">
+                
+                <div class="header-bar orange-bg">
+                    You Made a Difference!
+                </div>
+
+                <div class="logo-section">
+                    <table class="logo-table">
+                        <tr>
+                            <td class="logo-img-cell">
+                                    <img src="{!$Resource.ReceiptLogo}" height="100"  />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="receipt-title">Recurring Donation Receipt</div>
+
+                <div class="donor-info-container">
+                    <table class="donor-info-table">
+                        <tr>
+                            <td class="donor-info-left">
+                                {!IF(ISBLANK(donation.Donor.Secondary_Full_Name__c), donation.Donor.Name, donation.Donor.Name & ' & ' & donation.Donor.Secondary_Full_Name__c)}<br/><br/>
+                                {!IF(NOT(ISNULL(donation.Donor)), donation.Donor.PersonMailingStreet, '')},
+                                {!IF(NOT(ISNULL(donation.Donor)), donation.Donor.PersonMailingCity, '')}<br/>
+                                {!IF(NOT(ISNULL(donation.Donor)), donation.Donor.PersonMailingPostalCode, '')},
+                                {!IF(NOT(ISNULL(donation.Donor)), donation.Donor.PersonMailingCountry, '')}
+                            </td>
+
+                            <td class="donor-info-right">
+                                <strong>Donation Date: </strong>
+                                <apex:outputText value="{0,date,MM/dd/yyyy}" >
+                                    <apex:param value="{!donation.GiftCommitmentSchedules[0].StartDate}"/>
+                                </apex:outputText><br/>
+                                
+                                <strong>Payment Method:</strong>
+                                <span >{!donation.GiftCommitmentSchedules[0].paymentMethod}</span><br/>
+                                
+                                <strong>Receipt No:</strong>
+                                <span >{!donation.Receipt_Number__c}</span><br/>
+                                
+                                <strong>Donation Status:</strong>
+                                <span >{!donation.status}</span><br/>
+                                
+                                <strong>Donation Interval:</strong>
+                                <span >{!donation.GiftCommitmentSchedules[0].TransactionPeriod}</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="main-box-container">
+                    <table class="main-table">
+                        <tr>
+                            <td class="col-left">
+                                <div class="section-header">Donor</div>
+                                <div class="content-text">
+                                    {!IF(ISBLANK(donation.Donor.Secondary_Full_Name__c), donation.Donor.Name, donation.Donor.Name & ' & ' & donation.Donor.Secondary_Full_Name__c)}<br/>
+                                </div>
+                            </td>
+                            <td class="col-right">
+                                <div class="section-header">Donation Details</div>
+                                <div class="content-text">
+                                    <div style="white-space: pre-line;">{!donation.Receipt_Allocations__c}</div>
+                                    <br/>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="grey-row">
+                            <td class="col-left">
+                                <div class="section-header">Donation Name</div>
+                                <div class="amount-text">
+                                    {!donation.name}
+                                </div>
+                            </td>
+                            <td class="col-right">
+                                <div class="section-header">Donation Amount</div>
+                                <div class="amount-text">
+                                    ${!donation.GiftCommitmentSchedules[0].TransactionAmount}
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="notes-container">
+                    <div class="note-p">
+                    Thank you for your generous donation to the Sudanese American Physicians Association (SAPA). Your support helps us improve healthcare and provide medical assistance to communities in need.<br/>
+                    </div>
+                </div>
+
+            </div>
+            
+            <apex:variable var="rowNum" value="{!rowNum + 1}" />
+
+        </apex:repeat>
+    </apex:outputPanel>
+
+</body>
+</html>
+</apex:page>

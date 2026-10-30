@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Published by StripeFailureLogger when a Stripe donation fails to process or sync. Publish Immediately so the failure survives a rollback of the failing transaction.</description>
+    <eventType>HighVolume</eventType>
+    <label>Stripe Failure</label>
+    <pluralLabel>Stripe Failures</pluralLabel>
+    <publishBehavior>PublishImmediately</publishBehavior>
+</CustomObject>

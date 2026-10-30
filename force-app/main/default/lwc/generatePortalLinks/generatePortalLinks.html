@@ -1,0 +1,48 @@
+<template>
+    <div class="slds-p-around_medium">
+        <template if:true={loading}>
+            <p>Checking this campaign's members…</p>
+        </template>
+
+        <template if:true={errorText}>
+            <p class="slds-text-color_error slds-m-bottom_small">{errorText}</p>
+        </template>
+
+        <template if:true={showPreview}>
+            <p class="slds-m-bottom_small">
+                This campaign has <strong>{summary.totalMembers}</strong> members.
+                Creating links gives each donor who still needs to give details their own private portal link,
+                ready for the <strong>Send List Email</strong> step.
+            </p>
+            <ul class="slds-list_dotted slds-m-bottom_small">
+                <li><strong>{summary.toIssue}</strong> will get a new link</li>
+                <li>{summary.linkStillValid} already have a link that has not expired (left as is)</li>
+                <li>{summary.alreadySubmitted} already sent their details and are waiting for review (left as is)</li>
+            </ul>
+            <p if:true={nothingToIssue} class="slds-m-bottom_small">There is nothing to create for this campaign.</p>
+        </template>
+
+        <template if:true={showResult}>
+            <p class="slds-m-bottom_small">
+                <strong>{summary.toIssue}</strong> links created.
+                You can now select the members in the Campaign Members list and click <strong>Send List Email</strong>.
+            </p>
+            <p class="slds-text-color_weak">
+                Skipped: {summary.linkStillValid} with a valid link, {summary.alreadySubmitted} already submitted.
+            </p>
+        </template>
+
+        <div class="slds-m-top_medium slds-text-align_right">
+            <lightning-button label="Close" onclick={handleClose}></lightning-button>
+            <template if:true={showPreview}>
+                <lightning-button
+                    class="slds-m-left_x-small"
+                    variant="brand"
+                    label={generateLabel}
+                    disabled={cannotGenerate}
+                    onclick={handleGenerate}
+                ></lightning-button>
+            </template>
+        </div>
+    </div>
+</template>

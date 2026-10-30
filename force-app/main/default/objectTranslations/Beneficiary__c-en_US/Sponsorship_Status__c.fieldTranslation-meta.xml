@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sponsorship Status --></label>
+    <name>Sponsorship_Status__c</name>
+    <picklistValues>
+        <masterLabel>Reserved</masterLabel>
+        <translation><!-- Reserved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self Sponsored</masterLabel>
+        <translation><!-- Self Sponsored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sponsored</masterLabel>
+        <translation><!-- Sponsored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unsponsored</masterLabel>
+        <translation><!-- Unsponsored --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

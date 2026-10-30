@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Grant Management</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Program</tabs>
+    <tabs>standard-Benefit</tabs>
+    <tabs>standard-BenefitType</tabs>
+    <tabs>Grant_Payment__c</tabs>
+    <tabs>GCKit__GGW_Grant_Application__c</tabs>
+    <tabs>GCKit__Grant_Application_Flow</tabs>
+    <tabs>Field_Payment_Schedule__c</tabs>
+    <tabs>Sponsorship__c</tabs>
+    <tabs>Beneficiary__c</tabs>
+    <tabs>LaunchGood_Donation_Fund__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Grant_Management_UtilityBar</utilityBar>
+</CustomApplication>

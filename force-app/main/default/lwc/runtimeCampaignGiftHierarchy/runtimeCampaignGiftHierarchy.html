@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title={title} icon-name="standard:campaign">
+        <div class="toolbar slds-p-horizontal_medium slds-p-bottom_small">
+            <lightning-button-group>
+                <lightning-button
+                    label="Refresh"
+                    icon-name="utility:refresh"
+                    onclick={handleRefresh}>
+                </lightning-button>
+
+                <lightning-button
+                    label="Expand All"
+                    icon-name="utility:expand_all"
+                    onclick={handleExpandAll}>
+                </lightning-button>
+
+                <lightning-button
+                    label="Collapse All"
+                    icon-name="utility:collapse_all"
+                    onclick={handleCollapseAll}>
+                </lightning-button>
+            </lightning-button-group>
+        </div>
+
+        <template if:true={errorMessage}>
+            <div class="slds-p-horizontal_medium slds-p-bottom_small slds-text-color_error">
+                {errorMessage}
+            </div>
+        </template>
+
+        <template if:true={isLoading}>
+            <div class="slds-p-around_medium">
+                <lightning-spinner
+                    alternative-text="Loading campaign hierarchy"
+                    size="medium">
+                </lightning-spinner>
+            </div>
+        </template>
+
+        <template if:true={hasData}>
+            <div class="grid-wrapper">
+                <lightning-tree-grid
+                    key-field="id"
+                    data={data}
+                    columns={columns}
+                    hide-checkbox-column
+                    column-widths-mode="auto">
+                </lightning-tree-grid>
+            </div>
+        </template>
+
+        <template if:false={hasData}>
+            <template if:false={isLoading}>
+                <div class="slds-p-around_medium slds-text-color_weak">
+                    No hierarchy data found.
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>

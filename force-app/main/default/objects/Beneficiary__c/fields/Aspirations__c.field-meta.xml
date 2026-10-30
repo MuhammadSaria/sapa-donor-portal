@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aspirations__c</fullName>
+    <label>Aspirations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>a beautician</fullName>
+                <default>false</default>
+                <label>a beautician</label>
+            </value>
+            <value>
+                <fullName>a blacksmith</fullName>
+                <default>false</default>
+                <label>a blacksmith</label>
+            </value>
+            <value>
+                <fullName>a builder</fullName>
+                <default>false</default>
+                <label>a builder</label>
+            </value>
+            <value>
+                <fullName>a businessperson</fullName>
+                <default>false</default>
+                <label>a businessperson</label>
+            </value>
+            <value>
+                <fullName>a carpenter</fullName>
+                <default>false</default>
+                <label>a carpenter</label>
+            </value>
+            <value>
+                <fullName>a chef</fullName>
+                <default>false</default>
+                <label>a chef</label>
+            </value>
+            <value>
+                <fullName>a civil servant</fullName>
+                <default>false</default>
+                <label>a civil servant</label>
+            </value>
+            <value>
+                <fullName>a dentist</fullName>
+                <default>false</default>
+                <label>a dentist</label>
+            </value>
+            <value>
+                <fullName>a diplomat</fullName>
+                <default>false</default>
+                <label>a diplomat</label>
+            </value>
+            <value>
+                <fullName>a doctor</fullName>
+                <default>false</default>
+                <label>a doctor</label>
+            </value>
+            <value>
+                <fullName>a doll maker</fullName>
+                <default>false</default>
+                <label>a doll maker</label>
+            </value>
+            <value>
+                <fullName>a driver</fullName>
+                <default>false</default>
+                <label>a driver</label>
+            </value>
+            <value>
+                <fullName>a farmer</fullName>
+                <default>false</default>
+                <label>a farmer</label>
+            </value>
+            <value>
+                <fullName>a film director</fullName>
+                <default>false</default>
+                <label>a film director</label>
+            </value>
+            <value>
+                <fullName>a finance officer</fullName>
+                <default>false</default>
+                <label>a finance officer</label>
+            </value>
+            <value>
+                <fullName>a footballer</fullName>
+                <default>false</default>
+                <label>a footballer</label>
+            </value>
+            <value>
+                <fullName>a government employee</fullName>
+                <default>false</default>
+                <label>a government employee</label>
+            </value>
+            <value>
+                <fullName>a headmaster</fullName>
+                <default>false</default>
+                <label>a headmaster</label>
+            </value>
+            <value>
+                <fullName>a journalist</fullName>
+                <default>false</default>
+                <label>a journalist</label>
+            </value>
+            <value>
+                <fullName>a lawyer</fullName>
+                <default>false</default>
+                <label>a lawyer</label>
+            </value>
+            <value>
+                <fullName>a mathematician</fullName>
+                <default>false</default>
+                <label>a mathematician</label>
+            </value>
+            <value>
+                <fullName>an academic</fullName>
+                <default>false</default>
+                <label>an academic</label>
+            </value>
+            <value>
+                <fullName>an accountant</fullName>
+                <default>false</default>
+                <label>an accountant</label>
+            </value>
+            <value>
+                <fullName>an actor</fullName>
+                <default>false</default>
+                <label>an actor</label>
+            </value>
+            <value>
+                <fullName>an administrator</fullName>
+                <default>false</default>
+                <label>an administrator</label>
+            </value>
+            <value>
+                <fullName>an archaeologist</fullName>
+                <default>false</default>
+                <label>an archaeologist</label>
+            </value>
+            <value>
+                <fullName>an architect</fullName>
+                <default>false</default>
+                <label>an architect</label>
+            </value>
+            <value>
+                <fullName>an army officer</fullName>
+                <default>false</default>
+                <label>an army officer</label>
+            </value>
+            <value>
+                <fullName>an artist</fullName>
+                <default>false</default>
+                <label>an artist</label>
+            </value>
+            <value>
+                <fullName>an astronaut</fullName>
+                <default>false</default>
+                <label>an astronaut</label>
+            </value>
+            <value>
+                <fullName>an electrician</fullName>
+                <default>false</default>
+                <label>an electrician</label>
+            </value>
+            <value>
+                <fullName>an engineer</fullName>
+                <default>false</default>
+                <label>an engineer</label>
+            </value>
+            <value>
+                <fullName>an entertainer</fullName>
+                <default>false</default>
+                <label>an entertainer</label>
+            </value>
+            <value>
+                <fullName>an inventor</fullName>
+                <default>false</default>
+                <label>an inventor</label>
+            </value>
+            <value>
+                <fullName>an islamic scholar</fullName>
+                <default>false</default>
+                <label>an islamic scholar</label>
+            </value>
+            <value>
+                <fullName>a nurse</fullName>
+                <default>false</default>
+                <label>a nurse</label>
+            </value>
+            <value>
+                <fullName>a photographer</fullName>
+                <default>false</default>
+                <label>a photographer</label>
+            </value>
+            <value>
+                <fullName>a pilot</fullName>
+                <default>false</default>
+                <label>a pilot</label>
+            </value>
+            <value>
+                <fullName>a police officer</fullName>
+                <default>false</default>
+                <label>a police officer</label>
+            </value>
+            <value>
+                <fullName>a politician</fullName>
+                <default>false</default>
+                <label>a politician</label>
+            </value>
+            <value>
+                <fullName>a private employee</fullName>
+                <default>false</default>
+                <label>a private employee</label>
+            </value>
+            <value>
+                <fullName>a psychologist</fullName>
+                <default>false</default>
+                <label>a psychologist</label>
+            </value>
+            <value>
+                <fullName>a scientist</fullName>
+                <default>false</default>
+                <label>a scientist</label>
+            </value>
+            <value>
+                <fullName>a social worker</fullName>
+                <default>false</default>
+                <label>a social worker</label>
+            </value>
+            <value>
+                <fullName>a sportsperson</fullName>
+                <default>false</default>
+                <label>a sportsperson</label>
+            </value>
+            <value>
+                <fullName>a teacher</fullName>
+                <default>false</default>
+                <label>a teacher</label>
+            </value>
+            <value>
+                <fullName>a tour guide</fullName>
+                <default>false</default>
+                <label>a tour guide</label>
+            </value>
+            <value>
+                <fullName>a translator</fullName>
+                <default>false</default>
+                <label>a translator</label>
+            </value>
+            <value>
+                <fullName>a TV presenter</fullName>
+                <default>false</default>
+                <label>a TV presenter</label>
+            </value>
+            <value>
+                <fullName>a writer</fullName>
+                <default>false</default>
+                <label>a writer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

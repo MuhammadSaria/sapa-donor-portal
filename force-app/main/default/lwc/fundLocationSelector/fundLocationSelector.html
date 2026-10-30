@@ -1,0 +1,75 @@
+<template>
+    <div class="slds-form-element slds-m-bottom_medium">
+        <label class="slds-form-element__label">
+            <abbr class="slds-required" title="required">* </abbr>Choose Fund
+        </label>
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+                <div class={dropdownClasses} aria-expanded={isDropdownOpen} aria-haspopup="listbox" role="combobox">
+                    
+                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                        <template if:false={isValueSelected}>
+                            <lightning-input 
+                                type="search" 
+                                class="fund-search-input"
+                                value={searchKey} 
+                                onchange={handleSearch} 
+                                onclick={openDropdown} onblur={closeDropdown}
+                                placeholder="Search Funds..." 
+                                variant="label-hidden"
+                                autocomplete="off"
+                                required>
+                            </lightning-input>
+                        </template>
+
+                        <template if:true={isValueSelected}>
+                            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right" role="none">
+                                <span class="slds-icon_container slds-icon-standard-account slds-combobox__input-entity-icon">
+                                    <lightning-icon icon-name="standard:account" size="small"></lightning-icon>
+                                </span>
+                                <button type="button" class="slds-input_faux slds-combobox__input slds-combobox__input-value">
+                                    <span class="slds-truncate">{selectedFundName}</span>
+                                </button>
+                                <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right" title="Remove selected option" onclick={clearSelection}>
+                                    <lightning-icon icon-name="utility:close" size="x-small"></lightning-icon>
+                                </button>
+                            </div>
+                        </template>
+                    </div>
+
+                    <template if:true={isDropdownOpen}>
+                        <div class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox" onmousedown={preventBlur}>
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <template for:each={fundResults} for:item="fund">
+                                    <li key={fund.id} role="presentation" class="slds-listbox__item">
+                                        <div data-id={fund.id} data-name={fund.mainField} data-locations={fund.locations} onclick={handleFundSelect} class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                                            <span class="slds-media__figure slds-listbox__option-icon">
+                                                <lightning-icon icon-name="standard:account" size="small"></lightning-icon>
+                                            </span>
+                                            <span class="slds-media__body">
+                                                <span class="slds-listbox__option-text slds-listbox__option-text_entity">{fund.mainField}</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slds-form-element slds-m-bottom_medium">
+        <lightning-combobox
+            name="location"
+            label="Locations"
+            placeholder="Select a Location"
+            options={locationOptions}
+            value={selectedLocation}
+            onchange={handleLocationChange}
+            disabled={isLocationDisabled}
+            required>
+        </lightning-combobox>
+    </div>
+</template>

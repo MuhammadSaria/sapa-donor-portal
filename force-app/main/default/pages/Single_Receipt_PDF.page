@@ -1,0 +1,351 @@
+<apex:page controller="SinglePDFController" renderAs="pdf" showHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 13px; /* Slightly larger base font to match image */
+        }
+
+        /* --- Colors --- */
+        .orange-bg {
+            background-color: #F87325 !important; /* Adjusted orange to match image */
+            color: white;
+            -webkit-print-color-adjust: exact !important;
+        }
+        
+        .orange-text {
+            color: #F87325;
+            font-weight: bold;
+        }
+
+        /* --- Top Bar --- */
+        .header-bar {
+            width: 100%;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* --- Logo Section --- */
+        .logo-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .logo-table {
+            margin: 0 auto;
+        }
+        
+        .logo-img-cell {
+            padding-right: 15px;
+            vertical-align: middle;
+        }
+
+        .logo-divider {
+            border-left: 2px solid #555;
+            height: 40px;
+            margin: 0 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logo-text-cell {
+            text-align: left;
+            vertical-align: middle;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 1.2;
+            color: #000;
+        }
+
+        .receipt-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #F87325;
+            margin-bottom: 25px;
+        }
+
+        
+
+        /* --- Main Box --- */
+        .main-box-container {
+            width: 90%;
+            margin: 0 auto 30px auto;
+       
+            border: 1px solid #e0e0e0; /* Very light border */
+        }
+
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .main-table td {
+            vertical-align: top;
+            padding: 15px 20px;
+        }
+
+        .col-left {
+            width: 44.5%;
+            border-right: 1px solid #e0e0e0;
+        }
+        
+        .col-right {
+            width: 57%;
+        }
+
+        .section-header {
+            color: #F87325;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+       /* --- Donor Info Box (MATCHES main-box-container) --- */
+/* --- Donor Info Box (No Borders, Centered Like Main Box) --- */
+.donor-info-container {
+    width: 90%;
+    margin: 30px auto;
+    border: none; /* ❌ remove outer border */
+}
+
+.donor-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.donor-info-table td {
+    vertical-align: top;
+    padding: 15px 20px;
+}
+
+/* Left column */
+.donor-info-left {
+    width: 65%;
+    text-align: left;
+    line-height: 1.6;
+    border: none; /* ❌ remove center line */
+}
+
+/* Right column */
+.donor-info-right {
+    width: 35%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+
+        .content-text {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .content-text a {
+            color: #F87325;
+            text-decoration: none;
+        }
+
+        /* Grey Background Row */
+        .grey-row {
+            background-color: #f5f5f5 !important;
+            -webkit-print-color-adjust: exact !important;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .grey-row td {
+             padding: 15px 20px;
+        }
+
+        .amount-text {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* --- Footer Notes --- */
+        .notes-container {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .notes-header {
+            color: #F87325;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .note-p {
+            margin-bottom: 14px;
+        }
+
+
+.footer-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+        line-height: 1.6;
+    color: white;
+    background-color: #F87325;
+    padding: 5px 0 15px 0; /* top padding smaller, bottom padding larger */
+}
+
+.contact-bar {
+    font-size: 12px;
+    color: #fff; /* or #555 if you want contrast */
+    margin-bottom: 5px; /* space between contact and main footer text */
+}
+
+.footer-text {
+    font-weight: bold;
+    font-size: 13px;
+}
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header-bar orange-bg">
+        You Made a Difference!
+    </div>
+
+    <div class="logo-section">
+        <table class="logo-table">
+            <tr>
+                <td class="logo-img-cell">
+                        <img src="{!$Resource.ReceiptLogo}" height="100"  />
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+        
+    </div>
+
+    <div class="receipt-title">Donation Receipt</div>
+
+    <div class="donor-info-container">
+    <table class="donor-info-table">
+        <tr>
+            <td class="donor-info-left">
+                {!IF(ISBLANK(donations[0].Donor.Secondary_Full_Name__c), donations[0].Donor.Name, donations[0].Donor.Name & ' & ' & donations[0].Donor.Secondary_Full_Name__c)}<br/><br/>
+                {!IF(NOT(ISNULL(donations[0].Donor)), donations[0].Donor.PersonMailingStreet, '')},
+                {!IF(NOT(ISNULL(donations[0].Donor)), donations[0].Donor.PersonMailingCity, '')}<br/>
+                {!IF(NOT(ISNULL(donations[0].Donor)), donations[0].Donor.PersonMailingPostalCode, '')},
+                {!IF(NOT(ISNULL(donations[0].Donor)), donations[0].Donor.PersonMailingCountry, '')}
+            </td>
+
+            <td class="donor-info-right">
+                <strong>Donation Date: </strong>
+                <apex:outputText value="{0,date,MM/dd/yyyy}" >
+                    <apex:param value="{!donations[0].Transactiondate}"/>
+                </apex:outputText><br/>
+                
+
+                <strong>Payment Method:</strong>
+                <span >{!donations[0].paymentMethod}</span><br/>
+                
+
+                <strong>Receipt No:</strong>
+                <span >{!donations[0].Receipt_Number__c}</span><br/>
+                
+                <strong>Donation Status:</strong>
+                <span >{!donations[0].status}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+    <div class="main-box-container">
+        <table class="main-table">
+            <tr>
+                <td class="col-left">
+                    <div class="section-header">Donor</div>
+                    <div class="content-text">
+                        {!IF(ISBLANK(donations[0].Donor.Secondary_Full_Name__c), donations[0].Donor.Name, donations[0].Donor.Name & ' & ' & donations[0].Donor.Secondary_Full_Name__c)}<br/>
+                    </div>
+                </td>
+                <td class="col-right">
+                    <div class="section-header">Donation Details</div>
+                    <div class="content-text">
+                        
+                        <div style="white-space: pre-line;">{!donations[0].Receipt_Allocations__c}</div>
+                        <br/>
+                        
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="grey-row">
+                <td class="col-left">
+                    <div class="section-header">Donation Name</div>
+                    <div class="amount-text">
+                        {!donations[0].name}
+                    </div>
+                </td>
+                <td class="col-right">
+                    <div class="section-header">Donation Amount</div>
+                    <div class="amount-text">
+                        ${!donations[0].Final_Amount__c}
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="notes-container">
+        <div class="note-p">
+        Thank you for your generous donation to the Sudanese American Physicians Association (SAPA). Your support helps us improve healthcare and provide medical assistance to communities in need.<br/>
+        </div>
+        <div class="notes-header">Additional Notes</div>
+        <div class="note-p">
+            No goods or services were provided in exchange for this donation. Therefore, the full amount of your contribution is tax-deductible to the extent allowed by law. Please retain this receipt for your records.
+        </div>
+        <div class="note-p" style="font-style: italic;">
+            The Sudanese American Physicians Association (SAPA) is a 501(c)(3) nonprofit organization (EIN: 83-3464851), tax-exempt since October 2019 and based in Dallas, TX. Your donation is secure and tax-deductible to the extent allowed by law.
+        </div>
+        <div class="note-p">
+            Thank you again for your support. Together, we are making a difference.
+        </div>
+    </div>
+
+    <div class="footer-bar orange-bg">
+         <div class="footer-text">
+        Thank You For Your Donation.
+        </div>
+    <div class="contact-bar">
+        SAPA USA, 701 Commerce St Suite 500 Mailbox# 2044 Dallas, TX 75202 | 
+        donorcare@sapa.usa.org | 1-888-406-4029
+    </div>
+   
+</div>
+
+</body>
+</html>
+</apex:page>

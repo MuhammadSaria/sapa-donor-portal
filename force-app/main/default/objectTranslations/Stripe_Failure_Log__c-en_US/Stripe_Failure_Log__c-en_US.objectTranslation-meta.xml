@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stripe Failure Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stripe Failure Logs</value>
+    </caseValues>
+    <layouts>
+        <layout>Stripe Failure Log Layout</layout>
+        <sections>
+            <label><!-- Affected Records --></label>
+            <section>Affected Records</section>
+        </sections>
+        <sections>
+            <label><!-- Error Details --></label>
+            <section>Error Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

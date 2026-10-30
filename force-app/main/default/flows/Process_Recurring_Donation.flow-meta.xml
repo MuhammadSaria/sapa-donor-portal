@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Calls an action to process the gift commitment for giftCommitmentId.</description>
+        <name>ProcessGiftCommitment</name>
+        <label>Process Gift Commitment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>processGiftCommitment</actionName>
+        <actionType>processGiftCommitment</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>giftCommitmentId</name>
+            <value>
+                <elementReference>giftCommitmentId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>processGiftCommitment</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <constants>
+        <description>Stores the ID prefix for a gift commitment record.</description>
+        <name>GiftCommitmentIdPrefix</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>6gc</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Stores the ID prefix for a gift commitment schedule record.</description>
+        <name>GiftCommitmentSchedulePrefix</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>6cs</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Stores the ID prefix for a gift transaction record.</description>
+        <name>GiftTransactionIdPrefix</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>6tr</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Determines whether the record ID that was passed into the flow is a gift commitment, a gift commitment schedule, or gift transaction.</description>
+        <name>WhatTypeOfId</name>
+        <label>What Type of ID?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Other (Default)</defaultConnectorLabel>
+        <rules>
+            <name>IsGiftCommitmentId</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <elementReference>GiftCommitmentIdPrefix</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ProcessGiftCommitment</targetReference>
+            </connector>
+            <label>Gift Commitment</label>
+        </rules>
+        <rules>
+            <name>IsGiftCommitmentScheduleId</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <elementReference>GiftCommitmentSchedulePrefix</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetGiftCommitmentSchedule</targetReference>
+            </connector>
+            <label>Gift Commitment Schedule</label>
+        </rules>
+        <rules>
+            <name>IsGiftTransactionId</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <elementReference>GiftTransactionIdPrefix</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetGiftTransaction</targetReference>
+            </connector>
+            <label>Gift Transaction</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Process Recurring Donation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Process Recurring Donation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the gift commitment schedule record with the ID matching recordID. Stores the GiftCommitmentId of result in giftCommitmentId.</description>
+        <name>GetGiftCommitmentSchedule</name>
+        <label>Get Gift Commitment Schedule</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ProcessGiftCommitment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>GiftCommitmentSchedule</object>
+        <outputAssignments>
+            <assignToReference>giftCommitmentId</assignToReference>
+            <field>GiftCommitmentId</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the gift transaction record with the ID matching recordID. Stores the GiftCommitmentId of result in giftCommitmentId.</description>
+        <name>GetGiftTransaction</name>
+        <label>Get Gift Transaction</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ProcessGiftCommitment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>GiftTransaction</object>
+        <outputAssignments>
+            <assignToReference>giftCommitmentId</assignToReference>
+            <field>GiftCommitmentId</field>
+        </outputAssignments>
+    </recordLookups>
+    <sourceTemplate>frops_flow__ProcessGiftCommitment</sourceTemplate>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>WhatTypeOfId</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the gift commitment ID of the gift commitment schedule or gift transaction record passed into the flow.</description>
+        <name>giftCommitmentId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>recordId</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the ID of a gift commitment, gift commitment schedule, or gift transaction that is passed into the flow.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

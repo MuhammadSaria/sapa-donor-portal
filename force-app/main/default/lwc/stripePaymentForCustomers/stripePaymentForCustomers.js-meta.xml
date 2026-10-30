@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+     <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__FlowScreen</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__FlowScreen">
+            <property name="recordId" type="String" label="Record ID" description="Automatically binds to the record ID of the current page."/>
+            <property name="donationId" type="String" label="Donation ID" description="Donation record ID (for single donations)."/>
+            <property name="recurringDonationId" type="String" label="Recurring Donation ID" description="Recurring donation record ID (for recurring donations)."/>
+            <property name="donationType" type="String" label="Donation Type" description="Type of donation: single or recurring."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

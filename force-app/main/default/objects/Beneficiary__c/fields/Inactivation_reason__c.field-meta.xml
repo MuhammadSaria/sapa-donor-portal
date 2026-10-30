@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactivation_reason__c</fullName>
+    <label>Inactivation reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Over 18</fullName>
+                <default>false</default>
+                <label>Over 18</label>
+            </value>
+            <value>
+                <fullName>Graduated</fullName>
+                <default>false</default>
+                <label>Graduated</label>
+            </value>
+            <value>
+                <fullName>Dropped out of school</fullName>
+                <default>false</default>
+                <label>Dropped out of school</label>
+            </value>
+            <value>
+                <fullName>Moved home</fullName>
+                <default>false</default>
+                <label>Moved home</label>
+            </value>
+            <value>
+                <fullName>Died</fullName>
+                <default>false</default>
+                <label>Died</label>
+            </value>
+            <value>
+                <fullName>Duplicate record</fullName>
+                <default>false</default>
+                <label>Duplicate record</label>
+            </value>
+            <value>
+                <fullName>Child got sick</fullName>
+                <default>false</default>
+                <label>Child got sick</label>
+            </value>
+            <value>
+                <fullName>Moved school</fullName>
+                <default>false</default>
+                <label>Moved school</label>
+            </value>
+            <value>
+                <fullName>Unsponsored - too old to sponsor</fullName>
+                <default>false</default>
+                <label>Unsponsored - too old to sponsor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,73 @@
+.void-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.loading-container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.subscription-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detail-value {
+    color: #0070d2;
+    font-family: monospace;
+    word-break: break-all;
+    text-align: right;
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.button-group {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.slds-modal__header {
+    background-color: #fce6e6;
+    border-bottom: 2px solid #c23934;
+}
+
+.slds-modal__content {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.subscription-id-display {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: #c23934;
+    word-break: break-all;
+}
+
+.reason-display {
+    font-weight: 500;
+    color: #333;
+}

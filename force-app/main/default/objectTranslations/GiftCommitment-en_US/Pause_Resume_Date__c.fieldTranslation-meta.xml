@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Collection resumes on this date; the native pause ends the previous day. --></help>
+    <label><!-- Pause Resume Date --></label>
+    <name>Pause_Resume_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>FinalCommitmentAmount</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.TransactionAmount} * {!InstallmentCount}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>InstallmentCount</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+    ISBLANK({!$Record.EndDate}),
+    /* Open Schedule Logic */
+    CASE(TEXT({!$Record.TransactionPeriod}),
+        &quot;Monthly&quot;, FLOOR( 12 / BLANKVALUE({!$Record.TransactionInterval}, 1) ),
+        &quot;Yearly&quot;, FLOOR( 1 / BLANKVALUE({!$Record.TransactionInterval}, 1) ),
+        &quot;Weekly&quot;, FLOOR( 52 / BLANKVALUE({!$Record.TransactionInterval}, 1) ),
+        &quot;Daily&quot;, FLOOR( 365 / BLANKVALUE({!$Record.TransactionInterval}, 1) ),
+        1
+    ),
+    /* Fixed Schedule Logic: a populated End Date means Fixed. */
+    IF(
+        ISBLANK({!$Record.EndDate}),
+        0,
+        IF(
+            {!$Record.StartDate} &gt; {!$Record.EndDate},
+            0,
+            CASE(TEXT({!$Record.TransactionPeriod}),
+                &quot;Daily&quot;, 
+                FLOOR( ({!$Record.EndDate} - {!$Record.StartDate}) / BLANKVALUE({!$Record.TransactionInterval}, 1) ) + 1,
+                
+                &quot;Weekly&quot;, 
+                FLOOR( ({!$Record.EndDate} - {!$Record.StartDate}) / (7 * BLANKVALUE({!$Record.TransactionInterval}, 1)) ) + 1,
+                
+                &quot;Monthly&quot;, 
+                FLOOR( 
+                    (
+                        ((YEAR({!$Record.EndDate}) - YEAR({!$Record.StartDate})) * 12) 
+                        + (MONTH({!$Record.EndDate}) - MONTH({!$Record.StartDate}))
+                        - IF(DAY({!$Record.EndDate}) &lt; DAY({!$Record.StartDate}), 1, 0)
+                    ) / BLANKVALUE({!$Record.TransactionInterval}, 1) 
+                ) + 1,
+                
+                &quot;Yearly&quot;, 
+                FLOOR( 
+                    (
+                        ((YEAR({!$Record.EndDate}) - YEAR({!$Record.StartDate})) * 12) 
+                        + (MONTH({!$Record.EndDate}) - MONTH({!$Record.StartDate}))
+                        - IF(DAY({!$Record.EndDate}) &lt; DAY({!$Record.StartDate}), 1, 0)
+                    ) / (12 * BLANKVALUE({!$Record.TransactionInterval}, 1)) 
+                ) + 1,
+                1
+            )
+        )
+    )
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>PlannedInstallmentCount</name>
+        <dataType>Number</dataType>
+        <expression>IF(ISBLANK({!$Record.EndDate}), NULL, {!InstallmentCount})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>TrueStartDate</name>
+        <dataType>Date</dataType>
+        <expression>IF(
+    DAY({!$Record.StartDate}) &lt;= VALUE(TEXT({!$Record.TransactionDay})),
+    {!$Record.StartDate} - DAY({!$Record.StartDate}) + VALUE(TEXT({!$Record.TransactionDay})),
+    ADDMONTHS({!$Record.StartDate} - DAY({!$Record.StartDate}) + VALUE(TEXT({!$Record.TransactionDay})), 1)
+)</expression>
+    </formulas>
+    <interviewLabel>Calculate Commitment Amount {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Calculate Commitment Amount</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Stamp_Total_Amount</name>
+        <label>Stamp Total Amount</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Number_of_Planned_Installments__c</field>
+            <value>
+                <elementReference>PlannedInstallmentCount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TotalScheduleAmount</field>
+            <value>
+                <elementReference>FinalCommitmentAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Stamp_Total_Amount</targetReference>
+        </connector>
+        <object>GiftCommitmentSchedule</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

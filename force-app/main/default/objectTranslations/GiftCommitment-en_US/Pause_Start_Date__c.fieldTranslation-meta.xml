@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Stripe collection can stop earlier when a payment was already taken today. --></help>
+    <label><!-- Pause Start Date --></label>
+    <name>Pause_Start_Date__c</name>
+</CustomFieldTranslation>

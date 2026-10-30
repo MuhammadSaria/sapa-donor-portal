@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stripe_Pending_Update_Expires_At__c</fullName>
+    <description>Expiration returned by Stripe for a payment-gated immediate subscription update.</description>
+    <label>Stripe Pending Update Expires At</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

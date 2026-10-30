@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Gateway --></label>
+    <name>Payment_Gateway__c</name>
+    <picklistValues>
+        <masterLabel>Accept Blue</masterLabel>
+        <translation><!-- Accept Blue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Authorize.net</masterLabel>
+        <translation><!-- Authorize.net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardknox</masterLabel>
+        <translation><!-- Cardknox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clearent</masterLabel>
+        <translation><!-- Clearent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stripe</masterLabel>
+        <translation><!-- Stripe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USAePay</masterLabel>
+        <translation><!-- USAePay --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

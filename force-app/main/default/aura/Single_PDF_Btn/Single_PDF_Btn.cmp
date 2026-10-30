@@ -1,0 +1,13 @@
+<aura:component 
+    implements="flexipage:availableForAllPageTypes,force:appHostable,force:hasRecordId" 
+    access="global"
+>
+    <!-- Automatically holds the current record Id -->
+    <aura:attribute name="recordId" type="id"  />
+
+    <lightning:button 
+        label="Print Receipt - Single Donation"
+        variant="brand"
+        onclick="{!c.go}"
+    />
+</aura:component>

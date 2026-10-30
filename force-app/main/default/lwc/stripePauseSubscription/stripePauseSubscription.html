@@ -1,0 +1,199 @@
+<template>
+    <lightning-card class="pause-card">
+        <div class="slds-p-around_medium">
+
+            <!-- Loading State -->
+            <template if:true={isLoading}>
+                <div class="loading-container">
+                    <lightning-spinner alternative-text="Processing..." size="medium" variant="brand">
+                    </lightning-spinner>
+                    <p class="slds-text-body_small slds-m-top_small">{loadingMessage}</p>
+                </div>
+            </template>
+
+            <!-- Main Content -->
+            <template if:false={isLoading}>
+
+                <template if:true={isReconciliationRequired}>
+                    <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+                        Stripe and Salesforce pause states require administrator reconciliation. {pauseError}
+                    </div>
+                </template>
+                <template if:true={isResumeScheduled}>
+                    <div class="slds-notify slds-notify_alert slds-alert_info" role="status">
+                        Stripe collection resumed; Salesforce resumption is scheduled for {nextPaymentDate}.
+                        Existing billing gaps and future terms are unchanged. No catch-up payment will be collected.
+                    </div>
+                    <lightning-button label="Close" onclick={handleCancel}></lightning-button>
+                </template>
+
+                <!-- ══════════════════════════════════════════════════ -->
+                <!--  PAUSE MODE  (Status != Paused)                  -->
+                <!-- ══════════════════════════════════════════════════ -->
+                <template if:true={isPauseMode}>
+
+                    <!-- Warning Banner -->
+                    <div class="slds-notify slds-notify_alert slds-alert_warning slds-m-bottom_medium" role="alert">
+                        <span class="slds-assistive-text">warning</span>
+                        <lightning-icon icon-name="utility:warning" size="small"
+                            class="slds-m-right_x-small"></lightning-icon>
+                        <strong>Billing will be paused </strong> and any invoices generated during the pause period will
+                        be <strong> voided</strong>.
+                    </div>
+
+                    <!-- Subscription Details -->
+                    <div class="subscription-details">
+                        <div class="detail-row">
+                            <span class="detail-label">
+                                <lightning-icon icon-name="standard:recurring_donation" size="small"></lightning-icon>
+                                Subscription ID:
+                            </span>
+                            <span class="detail-value">{subscriptionId}</span>
+                        </div>
+                    </div>
+
+                    <!-- Pause Reason Picklist -->
+                    <div class="slds-m-vertical_medium">
+                        <lightning-record-edit-form record-id={recordId} object-api-name="GiftCommitment">
+                            <lightning-input-field field-name="Pause_Reason__c" value={pauseReason}
+                                onchange={handlePauseReasonChange} required>
+                            </lightning-input-field>
+                        </lightning-record-edit-form>
+                    </div>
+
+                    <!-- Resume Date Picker -->
+                    <div class="slds-m-bottom_medium">
+                        <lightning-input type="date" label="Auto-Resume Date" value={resumeDate} min={todayIso}
+                            onchange={handleResumeDateChange} required
+                            message-when-value-missing="A resume date is required.">
+                        </lightning-input>
+                        <p class="slds-text-body_small slds-text-color_weak slds-m-top_x-small">
+                            New pauses resume collection at 00:00 America/Los_Angeles on this date. You can also resume
+                            manually before this date.
+                        </p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="slds-m-top_large button-group">
+                        <lightning-button label="Cancel" variant="neutral" onclick={handleCancel} disabled={isLoading}>
+                        </lightning-button>
+                        <lightning-button label="Pause Subscription" variant="destructive" onclick={handlePauseClick}
+                            disabled={isLoading} class="slds-m-left_small">
+                        </lightning-button>
+                    </div>
+                </template>
+
+                <!-- ══════════════════════════════════════════════════ -->
+                <!--  RESUME MODE  (Status == Paused)                 -->
+                <!-- ══════════════════════════════════════════════════ -->
+                <template if:true={isResumeMode}>
+
+                    <!-- Info Banner -->
+                    <div class="slds-notify slds-notify_alert slds-alert_info slds-m-bottom_medium" role="alert">
+                        <span class="slds-assistive-text">info</span>
+                        <lightning-icon icon-name="utility:info" size="small"
+                            class="slds-m-right_x-small"></lightning-icon>
+                        A pause is recorded. Stripe and Salesforce may transition at different times; the stored resume
+                        date is shown below.
+                    </div>
+                    <template if:true={isSalesforcePauseScheduled}>
+                        <p class="slds-text-body_regular slds-m-bottom_medium">
+                            <strong>Pause Scheduled</strong>: Salesforce pause starts on {scheduledStartDate}
+                            (America/Los_Angeles). Stripe collection is paused; Salesforce Status remains Active until
+                            the native pause starts. Today’s already paid installment is unchanged.
+                        </p>
+                    </template>
+
+                    <!-- Pause Details (read-only) -->
+                    <div class="subscription-details">
+                        <div class="detail-row">
+                            <span class="detail-label">
+                                <lightning-icon icon-name="standard:recurring_donation" size="small"></lightning-icon>
+                                Subscription ID:
+                            </span>
+                            <span class="detail-value">{subscriptionId}</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">
+                                <lightning-icon icon-name="utility:description" size="small"></lightning-icon>
+                                Pause Reason:
+                            </span>
+                            <span class="detail-value reason-display">{currentPauseReason}</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">
+                                <lightning-icon icon-name="utility:event" size="small"></lightning-icon>
+                                Scheduled Resume:
+                            </span>
+                            <span class="detail-value">{scheduledResumeDate}</span>
+                        </div>
+                    </div>
+
+                    <p class="slds-text-body_regular slds-m-vertical_medium">
+                        Click <strong>Resume Now</strong> to enable collection. The next payment remains on the original
+                        billing calendar.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="slds-m-top_large button-group">
+                        <lightning-button label="Cancel" variant="neutral" onclick={handleCancel} disabled={isLoading}>
+                        </lightning-button>
+                        <lightning-button label="Resume Now" variant="brand" onclick={handleResumeClick}
+                            disabled={isLoading} class="slds-m-left_small">
+                        </lightning-button>
+                    </div>
+                </template>
+
+            </template><!-- end if:false={isLoading} -->
+        </div>
+
+        <!-- ══════════════════════════════════════════════════════════════ -->
+        <!--  CONFIRM MODAL  (shared for both Pause and Resume actions)   -->
+        <!-- ══════════════════════════════════════════════════════════════ -->
+        <template if:true={showConfirmModal}>
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <h2 class="slds-text-heading_medium">
+                            <lightning-icon icon-name="utility:warning" size="small"></lightning-icon>
+                            {confirmTitle}
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <p>{confirmMessage}</p>
+
+                        <!-- Pause confirmation detail -->
+                        <template if:true={isPauseMode}>
+                            <div class="slds-m-top_medium detail-row">
+                                <strong>Subscription ID:</strong>&nbsp;
+                                <span class="subscription-id-display">{subscriptionId}</span>
+                            </div>
+                            <div class="slds-m-top_small detail-row">
+                                <strong>Pause Reason:</strong>&nbsp;
+                                <span class="reason-display">{pauseReason}</span>
+                            </div>
+                            <div class="slds-m-top_small detail-row">
+                                <strong>Auto-Resume Date:</strong>&nbsp;
+                                <span>{resumeDate}</span>
+                            </div>
+                        </template>
+
+                        <p class="slds-text-color_weak slds-m-top_large slds-text-body_small">
+                            {confirmNote}
+                        </p>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button variant="neutral" label="Go Back" onclick={closeConfirmModal}
+                            disabled={isLoading}>
+                        </lightning-button>
+                        <lightning-button variant={confirmButtonVariant} label={confirmButtonLabel}
+                            onclick={confirmAction} disabled={isLoading} class="slds-m-left_small">
+                        </lightning-button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+
+    </lightning-card>
+</template>

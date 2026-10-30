@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Child Type --></label>
+    <name>Child_Type__c</name>
+    <picklistValues>
+        <masterLabel>Orphan</masterLabel>
+        <translation><!-- Orphan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Student</masterLabel>
+        <translation><!-- Student --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

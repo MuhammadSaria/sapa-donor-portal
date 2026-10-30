@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Add 1 to current installment number or start at 1 if empty</description>
+        <name>Calculate_New_Number</name>
+        <label>Calculate New Number</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>New_Installment_Number</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>frmNewInstallmentNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Donation_Installment_Number</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Only proceed if this Donation has a Recurring Donation lookup</description>
+        <name>Check_if_Recurring_Donation</name>
+        <label>Check if Recurring Donation</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Recurring</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Donation.MatchingEmployerTransactionId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Calculate_New_Number</targetReference>
+            </connector>
+            <label>Is Recurring</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <description>Calculates new installment number: current + 1, or 1 if empty</description>
+        <name>frmNewInstallmentNumber</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+   ISNULL({!Get_Related_Donation.Recurring_Donation_Installment_Number__c}), 
+   1, 
+   {!Get_Related_Donation.Recurring_Donation_Installment_Number__c} + 1
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Updating_recurring_donation_installement_number {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Updating_recurring_donation_installement_number</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Find the Donation linked to this Gift Transaction Designation</description>
+        <name>Get_Related_Donation</name>
+        <label>Get Related Donation</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_Recurring_Donation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MatchingEmployerTransactionId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.GiftTransactionId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>GiftTransaction</object>
+        <sortField>Recurring_Donation_Installment_Number__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Save the new installment number to the Donation record</description>
+        <name>Update_Donation_Installment_Number</name>
+        <label>Update Donation Installment Number</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MatchingEmployerTransactionId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Donation.MatchingEmployerTransactionId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Recurring_Donation_Installment_Number__c</field>
+            <value>
+                <elementReference>frmNewInstallmentNumber</elementReference>
+            </value>
+        </inputAssignments>
+        <object>GiftTransaction</object>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Related_Donation</targetReference>
+        </connector>
+        <object>GiftTransactionDesignation</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>New_Installment_Number</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+</Flow>

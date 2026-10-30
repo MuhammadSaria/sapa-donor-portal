@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restoration_Schedule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Salesforce schedule segment that restores the original recurring terms.</description>
+    <inlineHelpText>This schedule resumes the original amount and cadence after the temporary window.</inlineHelpText>
+    <label>Restoration Schedule</label>
+    <referenceTo>GiftCommitmentSchedule</referenceTo>
+    <relationshipLabel>Stripe Restoration Changes</relationshipLabel>
+    <relationshipName>StripeRestorationChanges</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,71 @@
+.status-page {
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid var(--sapa-card-border, #E6D9C8);
+    border-radius: 12px;
+    padding: 48px 32px;
+    box-shadow: var(--sapa-shadow, 0 1px 3px rgba(0, 0, 0, 0.08));
+}
+
+.status-page__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Good outcomes (thank you, already sent) are green; anything the donor has to act on is orange. */
+.status-page__icon--good {
+    background: var(--sapa-success-fill, #E3F2E8);
+    color: var(--sapa-success-green, #1F6B3A);
+}
+
+.status-page__icon--attention {
+    background: var(--sapa-tag-fill, #FFE8D1);
+    color: var(--sapa-burnt-orange-text, #B84A00);
+}
+
+.status-page__heading {
+    font-size: 26px;
+    line-height: 1.25;
+    font-weight: 500;
+    margin: 0 0 12px;
+}
+
+.status-page__body {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--sapa-ink-soft, #4A4A4A);
+    margin: 0 0 20px;
+}
+
+/* !important: the site theme colours every link blue and would win otherwise. */
+.status-page__link,
+.status-page__link:link,
+.status-page__link:visited {
+    color: var(--sapa-burnt-orange-text, #B84A00) !important;
+    font-weight: 500;
+    text-underline-offset: 3px;
+}
+
+.status-page__link:hover {
+    color: var(--sapa-burnt-orange-text-dark, #8A3B00) !important;
+}
+
+.status-page__link:focus-visible {
+    outline: 2px solid var(--sapa-orange, #FA7301);
+    outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+    .status-page {
+        padding: 36px 20px;
+    }
+}

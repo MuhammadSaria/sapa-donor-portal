@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For monthly changes, this is the day of the verified first future Gift Transaction. Daily and weekly changes leave it blank. --></help>
+    <label><!-- Requested Transaction Day --></label>
+    <name>Requested_Transaction_Day__c</name>
+</CustomFieldTranslation>

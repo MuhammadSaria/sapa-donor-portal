@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Per reason code switch for Stripe failure notifications. The record DeveloperName is the Stripe_Failure_Log__c Reason Code. Untick Notify to mute a noisy code without a deploy.</description>
+    <label>Stripe Failure Setting</label>
+    <pluralLabel>Stripe Failure Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

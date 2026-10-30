@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This date follows the original billing calendar. --></help>
+    <label><!-- Restoration First Payment Date --></label>
+    <name>Restoration_First_Payment_Date__c</name>
+</CustomFieldTranslation>

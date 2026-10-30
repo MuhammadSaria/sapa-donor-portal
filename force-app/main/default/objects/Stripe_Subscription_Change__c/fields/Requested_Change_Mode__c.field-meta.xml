@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Change_Mode__c</fullName>
+    <description>Server-calculated business mode for the requested recurring donation change.</description>
+    <inlineHelpText>EndDateOnly, Terms, TemporaryTerms, or StartDateChange. Salesforce calculates this value; staff do not edit it.</inlineHelpText>
+    <label>Requested Change Mode</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EndDateOnly</fullName>
+                <default>false</default>
+                <label>End Date Only</label>
+            </value>
+            <value>
+                <fullName>Terms</fullName>
+                <default>false</default>
+                <label>Terms</label>
+            </value>
+            <value>
+                <fullName>TemporaryTerms</fullName>
+                <default>false</default>
+                <label>Temporary Terms</label>
+            </value>
+            <value>
+                <fullName>StartDateChange</fullName>
+                <default>false</default>
+                <label>Start Date Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

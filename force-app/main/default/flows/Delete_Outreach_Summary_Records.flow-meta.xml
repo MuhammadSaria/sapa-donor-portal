@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>To prevent unmatched data due to known issue of Salesforce.
+
+https://help.salesforce.com/s/issue?id=a02Ka00000mn7sOIAQ&amp;title=npc-fundraising-outreachsummary-dpe-incorrectly-deletes-and-recreates-records-on-alternate-runs</description>
+    <environments>Default</environments>
+    <interviewLabel>Delete Outreach Summary {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Delete Outreach Summary Records</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_OS_Records</name>
+        <label>Delete OS Records</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>Get_OutreachSummary</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_OutreachSummary</name>
+        <label>Get OutreachSummary</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Delete_OS_Records</targetReference>
+        </connector>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OutreachSummary</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_OutreachSummary</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2026-04-26</startDate>
+            <startTime>00:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>osc_recs</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>OutreachSummary</objectType>
+    </variables>
+</Flow>

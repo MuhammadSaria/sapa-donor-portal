@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Selection - Question 3 --></label>
+    <name>Selection_Question_3__c</name>
+    <picklistValues>
+        <masterLabel>What are your career goals and aspirations?</masterLabel>
+        <translation><!-- What are your career goals and aspirations? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>What motivates you to pursue this degree?</masterLabel>
+        <translation><!-- What motivates you to pursue this degree? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Why do you think you should be selected for this scholarship?</masterLabel>
+        <translation><!-- Why do you think you should be selected for this scholarship? --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

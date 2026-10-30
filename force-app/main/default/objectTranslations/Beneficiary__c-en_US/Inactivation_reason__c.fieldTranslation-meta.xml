@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inactivation reason --></label>
+    <name>Inactivation_reason__c</name>
+    <picklistValues>
+        <masterLabel>Child got sick</masterLabel>
+        <translation><!-- Child got sick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Died</masterLabel>
+        <translation><!-- Died --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped out of school</masterLabel>
+        <translation><!-- Dropped out of school --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate record</masterLabel>
+        <translation><!-- Duplicate record --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graduated</masterLabel>
+        <translation><!-- Graduated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved home</masterLabel>
+        <translation><!-- Moved home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved school</masterLabel>
+        <translation><!-- Moved school --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over 18</masterLabel>
+        <translation><!-- Over 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unsponsored - too old to sponsor</masterLabel>
+        <translation><!-- Unsponsored - too old to sponsor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

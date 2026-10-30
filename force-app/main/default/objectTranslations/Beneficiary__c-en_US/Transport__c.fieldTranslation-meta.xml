@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Transport --></label>
+    <name>Transport__c</name>
+    <picklistValues>
+        <masterLabel>by bicycle</masterLabel>
+        <translation><!-- by bicycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>by bus</masterLabel>
+        <translation><!-- by bus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>by car</masterLabel>
+        <translation><!-- by car --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>by motorcycle</masterLabel>
+        <translation><!-- by motorcycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>walking</masterLabel>
+        <translation><!-- walking --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,119 @@
+<template>
+    <c-donor-portal-shell>
+        <template if:true={loading}>
+            <p class="portal-loading">Loading…</p>
+        </template>
+
+        <template if:true={statusScreen}>
+            <c-donor-portal-status-page status={statusScreen} first-name={firstName}></c-donor-portal-status-page>
+        </template>
+
+        <template if:true={showForm}>
+            <div class="portal-form">
+                <h1 class="portal-form__greeting">{greeting}</h1>
+                <p if:true={reasonText} class="portal-form__reason">{reasonText}</p>
+
+                <div class="portal-form__cards">
+                    <section class="portal-card portal-card--have">
+                        <h2 class="portal-card__title">What we have</h2>
+                        <dl class="portal-details">
+                            <div class="portal-details__row">
+                                <span class="portal-card__tick" aria-hidden="true">✓</span>
+                                <dt class="portal-details__label">Name</dt>
+                                <dd class="portal-details__value">{fullName}</dd>
+                            </div>
+                            <div if:true={hasEmail} class="portal-details__row">
+                                <span class="portal-card__tick" aria-hidden="true">✓</span>
+                                <dt class="portal-details__label">Email</dt>
+                                <dd class="portal-details__value">{email}</dd>
+                            </div>
+                            <div class="portal-details__row">
+                                <template if:true={hasPhoneSection}>
+                                    <span class="portal-card__tick portal-card__tick--missing" aria-hidden="true">!</span>
+                                </template>
+                                <template if:false={hasPhoneSection}>
+                                    <span class="portal-card__tick" aria-hidden="true">✓</span>
+                                </template>
+                                <dt class="portal-details__label">Phone</dt>
+                                <dd class="portal-details__value">
+                                    <template if:true={hasPhoneSection}>
+                                        <span class="portal-card__tag">Not on file yet</span>
+                                    </template>
+                                    <template if:false={hasPhoneSection}>{onFilePhone}</template>
+                                </dd>
+                            </div>
+                            <div class="portal-details__row">
+                                <template if:true={hasAddressSection}>
+                                    <span class="portal-card__tick portal-card__tick--missing" aria-hidden="true">!</span>
+                                </template>
+                                <template if:false={hasAddressSection}>
+                                    <span class="portal-card__tick" aria-hidden="true">✓</span>
+                                </template>
+                                <dt class="portal-details__label">Address</dt>
+                                <dd class="portal-details__value">
+                                    <template if:true={hasAddressSection}>
+                                        <span class="portal-card__tag">{addressTagText}</span>
+                                    </template>
+                                    <template if:false={hasAddressSection}>{onFileAddress}</template>
+                                </dd>
+                            </div>
+                        </dl>
+                        <p class="portal-details__note">To change anything shown here, please contact SAPA Donor Care.</p>
+                    </section>
+
+                    <section if:true={hasPhoneSection} class="portal-card portal-card--need">
+                        <h2 class="portal-card__title">What we need</h2>
+                        <div class="portal-form__field">
+                            <label for="phone" class="portal-form__label">Phone</label>
+                            <div class="portal-phone">
+                                <select id="phoneCode" aria-label="Country code" class="portal-form__input portal-phone__code" onchange={handleDialChange}>
+                                    <template for:each={dialGroups} for:item="group">
+                                        <optgroup key={group.key} label={group.label}>
+                                            <template for:each={group.options} for:item="opt">
+                                                <option key={opt.key} value={opt.value} selected={opt.selected}>{opt.label}</option>
+                                            </template>
+                                        </optgroup>
+                                    </template>
+                                </select>
+                                <input id="phone" type="tel" inputmode="tel" autocomplete="tel-national" aria-label="Phone number" placeholder={phonePlaceholder} class="portal-form__input portal-phone__number" value={phone} oninput={handlePhoneInput} onblur={handlePhoneBlur} />
+                            </div>
+                            <p if:true={phoneError} class="portal-form__error"><span aria-hidden="true">⚠</span> {phoneError}</p>
+                        </div>
+                    </section>
+
+                    <section if:true={hasAddressSection} class="portal-card portal-card--need">
+                        <h2 if:false={hasPhoneSection} class="portal-card__title">What we need</h2>
+                        <c-donor-portal-address-form
+                            street={initialStreet}
+                            city={initialCity}
+                            state={initialState}
+                            postal-code={initialPostalCode}
+                            country={initialCountry}
+                            countries={countries}
+                            server-errors={serverErrors}
+                            onaddresschange={handleAddressChange}
+                        ></c-donor-portal-address-form>
+                    </section>
+                </div>
+
+                <template if:true={hasAnyEditableSection}>
+                    <p if:true={formLevelError} class="portal-form__error portal-form__error--form">
+                        <span aria-hidden="true">⚠</span> {formLevelError}
+                    </p>
+
+                    <div class="portal-form__actions">
+                        <button
+                            type="button"
+                            class="portal-form__submit"
+                            disabled={cannotSubmit}
+                            aria-busy={submitting}
+                            onclick={handleSubmit}
+                        >{submitLabel}</button>
+                    </div>
+
+                    <p class="portal-form__footnote">Our Donor Care team checks every update before it is saved to your record.</p>
+                </template>
+            </div>
+        </template>
+    </c-donor-portal-shell>
+</template>

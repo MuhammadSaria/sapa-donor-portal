@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Finance Classification 2 --></label>
+    <name>Finance_Classification_2__c</name>
+    <picklistValues>
+        <masterLabel>DC- Inbound Calls</masterLabel>
+        <translation><!-- DC- Inbound Calls --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC- Outbound Calls</masterLabel>
+        <translation><!-- DC- Outbound Calls --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC- Renewals</masterLabel>
+        <translation><!-- DC- Renewals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX- General</masterLabel>
+        <translation><!-- EX- General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX- HNW</masterLabel>
+        <translation><!-- EX- HNW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR- 3rd Party Misc</masterLabel>
+        <translation><!-- FR- 3rd Party Misc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR- Al Buruj</masterLabel>
+        <translation><!-- FR- Al Buruj --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR- Misc</masterLabel>
+        <translation><!-- FR- Misc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR- Mosque Collection</masterLabel>
+        <translation><!-- FR- Mosque Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR- READ Dinner/Events</masterLabel>
+        <translation><!-- FR- READ Dinner/Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR- Regular Giving</masterLabel>
+        <translation><!-- FR- Regular Giving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencers-LG-HJ</masterLabel>
+        <translation><!-- Influencers-LG-HJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencers-LG-IA</masterLabel>
+        <translation><!-- Influencers-LG-IA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencers-LG-Misc</masterLabel>
+        <translation><!-- Influencers-LG-Misc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencers-LG-RJ</masterLabel>
+        <translation><!-- Influencers-LG-RJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencers-LG-SYQ</masterLabel>
+        <translation><!-- Influencers-LG-SYQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MC- Email</masterLabel>
+        <translation><!-- MC- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MC- Mailing</masterLabel>
+        <translation><!-- MC- Mailing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MC- SMS</masterLabel>
+        <translation><!-- MC- SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MC- Social Media</masterLabel>
+        <translation><!-- MC- Social Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MC- TV</masterLabel>
+        <translation><!-- MC- TV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MC- Website</masterLabel>
+        <translation><!-- MC- Website --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROG- Institutional Funding</masterLabel>
+        <translation><!-- PROG- Institutional Funding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROG- Oversees Offices</masterLabel>
+        <translation><!-- PROG- Oversees Offices --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

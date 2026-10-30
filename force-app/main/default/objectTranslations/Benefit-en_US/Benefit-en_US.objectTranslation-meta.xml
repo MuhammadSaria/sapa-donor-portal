@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Activity Description</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Activity Descriptions</value>
+    </caseValues>
+    <quickActions>
+        <label><!-- Change Activity Type --></label>
+        <name>Change_Activity_Type</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

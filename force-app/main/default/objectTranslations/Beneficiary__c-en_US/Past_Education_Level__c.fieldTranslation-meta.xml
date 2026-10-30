@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Past Education / Level --></label>
+    <name>Past_Education_Level__c</name>
+    <picklistValues>
+        <masterLabel>Intermediate</masterLabel>
+        <translation><!-- Intermediate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Matriculation</masterLabel>
+        <translation><!-- Matriculation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

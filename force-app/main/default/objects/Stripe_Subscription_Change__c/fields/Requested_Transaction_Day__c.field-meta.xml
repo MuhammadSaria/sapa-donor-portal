@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Transaction_Day__c</fullName>
+    <description>Normalized Salesforce billing day captured with the recurring schedule change.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For monthly changes, this is the day of the verified first future Gift Transaction. Daily and weekly changes leave it blank.</inlineHelpText>
+    <label>Requested Transaction Day</label>
+    <length>20</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

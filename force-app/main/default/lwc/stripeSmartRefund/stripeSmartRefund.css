@@ -1,0 +1,97 @@
+/* Custom styles for Stripe Smart Refund component */
+
+.refund-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.refund-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.detail-value {
+    color: #666;
+}
+
+.refund-button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.refund-button {
+    min-width: 120px;
+}
+
+.response-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #0070d2;
+}
+
+.response-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #0070d2;
+}
+
+.response-content {
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: #333;
+}
+
+/* Modal enhancements */
+.confirm-modal .slds-modal__content {
+    text-align: center;
+}
+
+.refund-amount-highlight {
+    color: #c23934;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Loading state */
+.loading-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.loading-spinner {
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .refund-card .slds-p-around_medium {
+        padding: 1rem !important;
+    }
+}

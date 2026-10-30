@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Interaction Type --></label>
+    <name>Interaction_Type__c</name>
+    <picklistValues>
+        <masterLabel>Authorization</masterLabel>
+        <translation><!-- Authorization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Profile</masterLabel>
+        <translation><!-- Customer Profile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Profile</masterLabel>
+        <translation><!-- Payment Profile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund</masterLabel>
+        <translation><!-- Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sale</masterLabel>
+        <translation><!-- Sale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Void</masterLabel>
+        <translation><!-- Void --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

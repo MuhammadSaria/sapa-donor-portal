@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Calls an action to get the currently enabled version of the gift commitment processing engine.</description>
+        <name>GetGiftCommitmentProcessingEngineVersion</name>
+        <label>Get Commitment Processing Engine Version</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>getCommitmentProcessingVersion</actionName>
+        <actionType>getCommitmentProcessingVersion</actionType>
+        <connector>
+            <targetReference>IsNextGenCommitmentProcessingEnabled</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>getCommitmentProcessingVersion</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Determines whether the NextGen Commitment Processing engine is enabled, and runs the appropriate sub-flow based on the decision.</description>
+        <name>IsNextGenCommitmentProcessingEnabled</name>
+        <label>Is NextGen Commitment Processing Enabled?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>RunGiftCmtOriginalProcessing</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Original Enabled</defaultConnectorLabel>
+        <rules>
+            <name>NextGenCommitmentProcessingEnabled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetGiftCommitmentProcessingEngineVersion.commitmentProcessingVersion</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>RunGiftCmtNextGenProcessing</targetReference>
+            </connector>
+            <label>NextGen Enabled</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Schedule Recurring Donation Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Schedule Recurring Donation Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <sourceTemplate>frops_flow__CnGiftCmtProcessing</sourceTemplate>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetGiftCommitmentProcessingEngineVersion</targetReference>
+        </connector>
+        <schedule>
+            <dayOfMonthToRun>0</dayOfMonthToRun>
+            <frequency>Daily</frequency>
+            <frequencyNumber>0</frequencyNumber>
+            <startDate>2026-01-01</startDate>
+            <startTime>00:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Calls a flow that runs the NextGen version of the gift commitment batch processing engine</description>
+        <name>RunGiftCmtNextGenProcessing</name>
+        <label>Run Gift Commitment NextGen Processing</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>frops_flow__GiftCmtProcessingNextGen</flowName>
+    </subflows>
+    <subflows>
+        <description>Calls a flow that runs the original version of the gift commitment batch processing engine.</description>
+        <name>RunGiftCmtOriginalProcessing</name>
+        <label>Run Gift Commitment Original Batch Processing</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>frops_flow__GiftCmtProcessingOriginal</flowName>
+    </subflows>
+</Flow>

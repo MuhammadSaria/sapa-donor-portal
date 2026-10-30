@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Aspirations --></label>
+    <name>Aspirations__c</name>
+    <picklistValues>
+        <masterLabel>a TV presenter</masterLabel>
+        <translation><!-- a TV presenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a beautician</masterLabel>
+        <translation><!-- a beautician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a blacksmith</masterLabel>
+        <translation><!-- a blacksmith --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a builder</masterLabel>
+        <translation><!-- a builder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a businessperson</masterLabel>
+        <translation><!-- a businessperson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a carpenter</masterLabel>
+        <translation><!-- a carpenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a chef</masterLabel>
+        <translation><!-- a chef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a civil servant</masterLabel>
+        <translation><!-- a civil servant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a dentist</masterLabel>
+        <translation><!-- a dentist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a diplomat</masterLabel>
+        <translation><!-- a diplomat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a doctor</masterLabel>
+        <translation><!-- a doctor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a doll maker</masterLabel>
+        <translation><!-- a doll maker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a driver</masterLabel>
+        <translation><!-- a driver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a farmer</masterLabel>
+        <translation><!-- a farmer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a film director</masterLabel>
+        <translation><!-- a film director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a finance officer</masterLabel>
+        <translation><!-- a finance officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a footballer</masterLabel>
+        <translation><!-- a footballer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a government employee</masterLabel>
+        <translation><!-- a government employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a headmaster</masterLabel>
+        <translation><!-- a headmaster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a journalist</masterLabel>
+        <translation><!-- a journalist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a lawyer</masterLabel>
+        <translation><!-- a lawyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a mathematician</masterLabel>
+        <translation><!-- a mathematician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a nurse</masterLabel>
+        <translation><!-- a nurse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a photographer</masterLabel>
+        <translation><!-- a photographer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a pilot</masterLabel>
+        <translation><!-- a pilot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a police officer</masterLabel>
+        <translation><!-- a police officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a politician</masterLabel>
+        <translation><!-- a politician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a private employee</masterLabel>
+        <translation><!-- a private employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a psychologist</masterLabel>
+        <translation><!-- a psychologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a scientist</masterLabel>
+        <translation><!-- a scientist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a social worker</masterLabel>
+        <translation><!-- a social worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a sportsperson</masterLabel>
+        <translation><!-- a sportsperson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a teacher</masterLabel>
+        <translation><!-- a teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a tour guide</masterLabel>
+        <translation><!-- a tour guide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a translator</masterLabel>
+        <translation><!-- a translator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a writer</masterLabel>
+        <translation><!-- a writer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an academic</masterLabel>
+        <translation><!-- an academic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an accountant</masterLabel>
+        <translation><!-- an accountant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an actor</masterLabel>
+        <translation><!-- an actor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an administrator</masterLabel>
+        <translation><!-- an administrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an archaeologist</masterLabel>
+        <translation><!-- an archaeologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an architect</masterLabel>
+        <translation><!-- an architect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an army officer</masterLabel>
+        <translation><!-- an army officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an artist</masterLabel>
+        <translation><!-- an artist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an astronaut</masterLabel>
+        <translation><!-- an astronaut --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an electrician</masterLabel>
+        <translation><!-- an electrician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an engineer</masterLabel>
+        <translation><!-- an engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an entertainer</masterLabel>
+        <translation><!-- an entertainer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an inventor</masterLabel>
+        <translation><!-- an inventor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an islamic scholar</masterLabel>
+        <translation><!-- an islamic scholar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Failure Source --></label>
+    <name>Failure_Source__c</name>
+    <picklistValues>
+        <masterLabel>Async Job</masterLabel>
+        <translation><!-- Async Job --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pause-Resume</masterLabel>
+        <translation><!-- Pause-Resume --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recurring Sync</masterLabel>
+        <translation><!-- Recurring Sync --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund-Void</masterLabel>
+        <translation><!-- Refund-Void --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce Processing</masterLabel>
+        <translation><!-- Salesforce Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stripe API Callout</masterLabel>
+        <translation><!-- Stripe API Callout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stripe Webhook</masterLabel>
+        <translation><!-- Stripe Webhook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webhook Signature</masterLabel>
+        <translation><!-- Webhook Signature --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

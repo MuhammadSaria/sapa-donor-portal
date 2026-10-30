@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Code --></label>
+    <name>Reason_Code__c</name>
+    <picklistValues>
+        <masterLabel>ASYNC_JOB_FAILED</masterLabel>
+        <translation><!-- ASYNC_JOB_FAILED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INVOICE_RD_NOT_FOUND</masterLabel>
+        <translation><!-- INVOICE_RD_NOT_FOUND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INVOICE_SUBSCRIPTION_MISMATCH</masterLabel>
+        <translation><!-- INVOICE_SUBSCRIPTION_MISMATCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAID_NOT_RECORDED</masterLabel>
+        <translation><!-- PAID_NOT_RECORDED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAUSE_RESUME_FAILED</masterLabel>
+        <translation><!-- PAUSE_RESUME_FAILED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAYMENT_INSERT_FAILED</masterLabel>
+        <translation><!-- PAYMENT_INSERT_FAILED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RD_UPDATE_FAILED</masterLabel>
+        <translation><!-- RD_UPDATE_FAILED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RECURRING_SYNC_FAILED</masterLabel>
+        <translation><!-- RECURRING_SYNC_FAILED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REFUND_FAILED</masterLabel>
+        <translation><!-- REFUND_FAILED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STRIPE_API_ERROR</masterLabel>
+        <translation><!-- STRIPE_API_ERROR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VOID_FAILED</masterLabel>
+        <translation><!-- VOID_FAILED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WEBHOOK_SIGNATURE_INVALID</masterLabel>
+        <translation><!-- WEBHOOK_SIGNATURE_INVALID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WEBHOOK_UNHANDLED_EXCEPTION</masterLabel>
+        <translation><!-- WEBHOOK_UNHANDLED_EXCEPTION --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

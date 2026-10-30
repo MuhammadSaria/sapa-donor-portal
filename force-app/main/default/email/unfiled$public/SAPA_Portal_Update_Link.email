@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where should we mail your 2026 year-end giving statement?</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Arial,Helvetica,sans-serif;color:#1f2937;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f3f4f6;">
+<tr>
+<td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:#ffffff;border-radius:8px;">
+<tr>
+<td style="background-color:#1f3a5f;padding:20px 32px;border-radius:8px 8px 0 0;">
+<span style="font-size:18px;font-weight:bold;color:#ffffff;">Sudanese American Physicians Association</span>
+</td>
+</tr>
+<tr>
+<td style="padding:32px 32px 8px 32px;font-size:16px;line-height:24px;">
+<p style="margin:0 0 16px 0;">Hello {!Contact.FirstName},</p>
+<p style="margin:0 0 16px 0;">Your 2026 year-end giving statement is being prepared. To make sure it reaches you, please tell us where to mail it.</p>
+<p style="margin:0 0 24px 0;">It takes about a minute. We will only ask for the details we do not already have.</p>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding:0 32px 24px 32px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="center" bgcolor="#e8730c" style="border-radius:6px;">
+<a href="{!Contact.Portal_Link__c}" target="_blank" style="display:inline-block;padding:14px 32px;font-size:16px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:6px;">Update my details</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:0 32px 24px 32px;font-size:14px;line-height:21px;color:#4b5563;">
+<p style="margin:0 0 12px 0;">This link is private and made just for you, so please do not forward it. Our Donor Care team checks every update before it is saved to your record.</p>
+<p style="margin:0;">If the button does not work, copy this address into your browser:<br>
+<a href="{!Contact.Portal_Link__c}" style="color:#1f3a5f;word-break:break-all;">{!Contact.Portal_Link__c}</a></p>
+</td>
+</tr>
+<tr>
+<td style="padding:16px 32px 28px 32px;border-top:1px solid #e5e7eb;font-size:12px;line-height:18px;color:#6b7280;">
+<p style="margin:0 0 6px 0;">Thank you for your generosity.</p>
+<p style="margin:0;">Questions? Reply to this email and SAPA Donor Care will help.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

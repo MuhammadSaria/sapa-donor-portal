@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Means of Support --></label>
+    <name>Means_of_Support__c</name>
+    <picklistValues>
+        <masterLabel>charitable donations</masterLabel>
+        <translation><!-- charitable donations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>community support</masterLabel>
+        <translation><!-- community support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>employment</masterLabel>
+        <translation><!-- employment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>family income support</masterLabel>
+        <translation><!-- family income support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>family support</masterLabel>
+        <translation><!-- family support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>farming</masterLabel>
+        <translation><!-- farming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>friends support</masterLabel>
+        <translation><!-- friends support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>handouts</masterLabel>
+        <translation><!-- handouts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>loans</masterLabel>
+        <translation><!-- loans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>neighbours support</masterLabel>
+        <translation><!-- neighbours support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pension</masterLabel>
+        <translation><!-- pension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>refugee allowance</masterLabel>
+        <translation><!-- refugee allowance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>savings</masterLabel>
+        <translation><!-- savings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>temporary work</masterLabel>
+        <translation><!-- temporary work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unspecified</masterLabel>
+        <translation><!-- unspecified --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

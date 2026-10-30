@@ -1,0 +1,18 @@
+<aura:component controller="ReceiptUpdateControllerRecurring" implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+
+    <!-- Attribute to hold message -->
+    <aura:attribute name="message" type="String" default=""/>
+
+    <!-- Button to mark receipts -->
+    <lightning:button 
+        label="Mark Receipts as Sent For Recurring Donation"
+        variant="brand"
+        onclick="{!c.markSent}"
+    />
+
+    <!-- Display message on page -->
+    <div style="margin-top: 15px; color: #000000 !important; font-weight: bold;">
+        {!v.message}
+    </div>
+
+</aura:component>

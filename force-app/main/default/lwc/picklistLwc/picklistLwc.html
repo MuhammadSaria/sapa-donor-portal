@@ -1,0 +1,27 @@
+<template>
+    <c-generic-lookup name = "GiftDesignation" label="Choose Allocations" selected-icon-name="standard:account" object-label="Fund"
+          object-api-name="GiftDesignation" field-api-name="Name" other-field-api-name=""
+          onvalueselected={handleInputChange}  data-index = {index}>
+      </c-generic-lookup>
+      <br/>
+        
+     <label for="Location">Locations</label>
+                    <select required class="slds-select" name="Location" onchange={handlPlChange1} disabled={IsDisabled}>
+        <template for:each={picklistValues} for:item="listViewItem">
+            <option key={listViewItem} value={listViewItem}>{listViewItem}</option>
+        </template>
+    </select>
+  
+        <br/>
+  
+         <template if:true={showDates}>
+            <!--<lightning-input type="date" label="Sponsership Date" value={selectedDate} onchange={handleSpDateChange} required = "true"></lightning-input>
+             <br/>!-->
+              <template if:true={showSPdate}>
+             <lightning-input type="date" label=" Renewal Date" onchange={handleReDateChange}  required={isRenewalDateReq}></lightning-input>
+              </template>
+         </template>
+             <br/>
+  
+  
+  </template>

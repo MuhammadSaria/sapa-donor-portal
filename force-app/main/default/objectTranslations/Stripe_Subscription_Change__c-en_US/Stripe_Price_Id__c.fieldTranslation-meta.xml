@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Current Price after the future phase begins. --></help>
+    <label><!-- Stripe Price ID --></label>
+    <name>Stripe_Price_Id__c</name>
+</CustomFieldTranslation>

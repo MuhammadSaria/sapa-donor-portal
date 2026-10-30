@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- School - Public for profiles / reports --></label>
+    <name>School_Public_for_profiles_reports__c</name>
+    <picklistValues>
+        <masterLabel>Government School</masterLabel>
+        <translation><!-- Government School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ  Foundation School</masterLabel>
+        <translation><!-- READ  Foundation School --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

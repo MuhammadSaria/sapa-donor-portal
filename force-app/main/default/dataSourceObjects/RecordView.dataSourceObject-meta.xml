@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataSourceObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataSource>SentOsEngagementConnector_f35cea64_3fa6_40de_bedc_91fff33603b9</dataSource>
+    <externalRecordIdentifier>SentOsEngagementConnector_f35cea64_3fa6_40de_bedc_91fff33603b9</externalRecordIdentifier>
+    <masterLabel>Record View</masterLabel>
+    <storageType>LOCAL</storageType>
+    <templateVersion>1</templateVersion>
+</DataSourceObject>

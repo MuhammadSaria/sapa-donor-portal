@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+		<target>lightning__RecordPage</target>
+		<target>lightning__AppPage</target>
+		<target>lightning__HomePage</target>
+		<target>lightning__Tab</target>
+		<target>lightning__UtilityBar</target>
+		<target>lightning__FlowScreen</target>
+	</targets>
+	<targetConfigs>
+	   <targetConfig targets="lightning__FlowScreen">
+			<property name="recordId" type ="string" label="Selected Id" role="OutputOnly"/>
+			<property name="recordIds" type ="string" label="Ids" role="OutputOnly"/>
+			<property name="selectedVal" type ="string" label="SelectedVal" role="OutputOnly"/>
+			<property name="SelectedRecName" type ="string" label="SelectedRecName" role="OutputOnly"/>	
+			<property name="SpDate" type ="date" label="SpDate" role="OutputOnly"/>
+			<property name="RVDate" type ="date" label="RVDate" role="OutputOnly"/>	
+			<property name="isRenewalDateReq" type ="string" label="is Renewal Date Req" role="OutputOnly"/>
+			<property name="Type" type ="string" label="Type" role="OutputOnly"/>	
+			<property name="locs" type ="string" label="locations" role="OutputOnly"/>			
+        </targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

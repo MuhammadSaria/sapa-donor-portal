@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Blank means Open; a date means Fixed. The actual final payment date is stored separately. --></help>
+    <label><!-- Requested Configuration End Date --></label>
+    <name>Requested_Configuration_End_Date__c</name>
+</CustomFieldTranslation>

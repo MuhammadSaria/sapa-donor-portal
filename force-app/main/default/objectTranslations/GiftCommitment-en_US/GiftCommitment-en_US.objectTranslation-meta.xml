@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Recurring Donation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Recurring Donations</value>
+    </caseValues>
+    <quickActions>
+        <label><!-- Cancel Stripe Subscription --></label>
+        <name>Cancel_Stripe_Subscription</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage Gift Default Designations --></label>
+        <name>Manage_Gift_Default_Designations</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage Recurring Donation Schedule --></label>
+        <name>Manage_Recurring_Donation_Schedule</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Open/Fix Recurring --></label>
+        <name>Open_Fix_Recurring</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Pause/Resume Stripe Subscription --></label>
+        <name>Pause_Resume_Stripe_Subscription</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

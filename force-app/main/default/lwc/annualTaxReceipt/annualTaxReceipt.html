@@ -1,0 +1,97 @@
+<template>
+    <lightning-card title="Annual Tax Receipts">
+       
+  
+    <div class="slds-m-around_medium ">
+    <div class="combobox-container">
+
+        <lightning-input 
+        type="date" 
+        label="Start Date" 
+        name="startYear"
+        value={startYear} 
+        onchange={handleChangeYear}>
+    </lightning-input>
+
+    <lightning-input 
+    type="date" 
+    label="End Date" 
+    name="endYear"
+    value={endYear} 
+    onchange={handleChangeYear}>
+</lightning-input>
+
+       
+        </div>
+        <br/>
+        <br/>
+       
+        
+            <!-- Button to trigger batch job -->
+           <!-------------------------- -->
+        <template if:false={recordId}>
+                <ul class="slds-button-group-row">
+                <li class="slds-button-group-item">
+                <lightning-button label="Email Annual Tax Receipts" 
+                onclick={handleSendReceipts}
+                disabled={isProcessing}>
+                </lightning-button>
+                </li>
+
+
+            <li class="slds-button-group-item">
+                <lightning-button label="Generate Non-Email Donor PDF"
+                onclick={generatePDFforBatch}
+                variant="brand"
+                class="slds-m-top_small">
+                </lightning-button>
+            </li>
+            </ul>
+        </template>
+         <!--       -->
+
+
+         <!-- Button to send and Generate pdf to Contact -->
+            <template if:true={recordId}>
+                <ul class="slds-button-group-row">
+                    <li class="slds-button-group-item">   
+                <lightning-button label="Send Annual Tax Receipt"
+                    onclick={handleSendReceipt}
+                    variant="brand"
+                    class="slds-m-top_small">
+                    </lightning-button>
+                </li>
+           
+
+                <li class="slds-button-group-item">
+                <lightning-button label="Generate PDF"
+                onclick={generatePDF}
+                variant="brand"
+                class="slds-m-top_small" style=" margin-left: 10px;">
+                </lightning-button>
+            </li>
+            </ul>
+        </template>
+
+    <template if:true={isProcessing}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+            
+            <!-- Display error message, if any -->
+            <template if:true={errorMessage}>
+                <div class="slds-text-color_error">
+                    {errorMessage}
+                </div>
+            </template>
+
+            <!-- Display a processing message when the batch job is triggered 
+            <template if:true={isProcessing}>
+                <div class="slds-text-color_success">
+                    Processing, please wait...
+                </div>
+            </template>-->
+        </div>
+  
+        
+    </lightning-card>
+</template>

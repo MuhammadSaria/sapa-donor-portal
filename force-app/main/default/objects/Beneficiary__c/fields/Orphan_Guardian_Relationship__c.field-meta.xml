@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Orphan_Guardian_Relationship__c</fullName>
+    <label>Orphan Guardian Relationship</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>adoptive father</fullName>
+                <default>false</default>
+                <label>adoptive father</label>
+            </value>
+            <value>
+                <fullName>aunt</fullName>
+                <default>false</default>
+                <label>aunt</label>
+            </value>
+            <value>
+                <fullName>brother</fullName>
+                <default>false</default>
+                <label>brother</label>
+            </value>
+            <value>
+                <fullName>brother-in-law</fullName>
+                <default>false</default>
+                <label>brother-in-law</label>
+            </value>
+            <value>
+                <fullName>cousin</fullName>
+                <default>false</default>
+                <label>cousin</label>
+            </value>
+            <value>
+                <fullName>family friend</fullName>
+                <default>false</default>
+                <label>family friend</label>
+            </value>
+            <value>
+                <fullName>grandfather</fullName>
+                <default>false</default>
+                <label>grandfather</label>
+            </value>
+            <value>
+                <fullName>grandmother</fullName>
+                <default>false</default>
+                <label>grandmother</label>
+            </value>
+            <value>
+                <fullName>mother</fullName>
+                <default>false</default>
+                <label>mother</label>
+            </value>
+            <value>
+                <fullName>neighbour</fullName>
+                <default>false</default>
+                <label>neighbour</label>
+            </value>
+            <value>
+                <fullName>orphan worker</fullName>
+                <default>false</default>
+                <label>orphan worker</label>
+            </value>
+            <value>
+                <fullName>sister</fullName>
+                <default>false</default>
+                <label>sister</label>
+            </value>
+            <value>
+                <fullName>stepbrother</fullName>
+                <default>false</default>
+                <label>stepbrother</label>
+            </value>
+            <value>
+                <fullName>stepmother</fullName>
+                <default>false</default>
+                <label>stepmother</label>
+            </value>
+            <value>
+                <fullName>teacher</fullName>
+                <default>false</default>
+                <label>teacher</label>
+            </value>
+            <value>
+                <fullName>uncle</fullName>
+                <default>false</default>
+                <label>uncle</label>
+            </value>
+            <value>
+                <fullName>unspecified</fullName>
+                <default>false</default>
+                <label>unspecified</label>
+            </value>
+            <value>
+                <fullName>father</fullName>
+                <default>false</default>
+                <label>father</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

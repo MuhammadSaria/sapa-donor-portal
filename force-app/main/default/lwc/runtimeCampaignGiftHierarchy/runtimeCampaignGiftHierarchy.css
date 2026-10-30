@@ -1,0 +1,9 @@
+.grid-wrapper {
+    min-height: 24rem;
+    overflow-x: auto;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-start;
+}

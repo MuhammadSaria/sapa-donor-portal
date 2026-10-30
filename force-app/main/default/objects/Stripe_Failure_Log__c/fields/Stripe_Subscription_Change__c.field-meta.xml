@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stripe_Subscription_Change__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Stripe Subscription Change</label>
+    <referenceTo>Stripe_Subscription_Change__c</referenceTo>
+    <relationshipLabel>Stripe Failure Logs</relationshipLabel>
+    <relationshipName>Stripe_Failure_Logs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

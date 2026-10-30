@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Project --></label>
+    <name>Project__c</name>
+    <picklistValues>
+        <masterLabel>Emergency Aid</masterLabel>
+        <translation><!-- Emergency Aid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Medical Aid</masterLabel>
+        <translation><!-- Emergency Medical Aid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Medical Missions</masterLabel>
+        <translation><!-- Emergency Medical Missions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Intervention</masterLabel>
+        <translation><!-- Food Intervention --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Funds</masterLabel>
+        <translation><!-- General Funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Water, Sanitation and Hygiene Interventions</masterLabel>
+        <translation><!-- General Water, Sanitation and Hygiene Interventions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gift In Kind</masterLabel>
+        <translation><!-- Gift In Kind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Services Delivery Support</masterLabel>
+        <translation><!-- Health Services Delivery Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Islamic Giving</masterLabel>
+        <translation><!-- Islamic Giving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maternal, Newborn and Child Health</masterLabel>
+        <translation><!-- Maternal, Newborn and Child Health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nutrition</masterLabel>
+        <translation><!-- Nutrition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Protection Services</masterLabel>
+        <translation><!-- Social Protection Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WASH Protection Services</masterLabel>
+        <translation><!-- WASH Protection Services --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

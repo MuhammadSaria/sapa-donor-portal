@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Country --></label>
+    <name>Country__c</name>
+    <picklistValues>
+        <masterLabel>Bangladesh</masterLabel>
+        <translation><!-- Bangladesh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lebanon</masterLabel>
+        <translation><!-- Lebanon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pakistan</masterLabel>
+        <translation><!-- Pakistan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pakistan-Kashmir</masterLabel>
+        <translation><!-- Pakistan-Kashmir --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palestine-Gaza</masterLabel>
+        <translation><!-- Palestine-Gaza --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yemen</masterLabel>
+        <translation><!-- Yemen --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

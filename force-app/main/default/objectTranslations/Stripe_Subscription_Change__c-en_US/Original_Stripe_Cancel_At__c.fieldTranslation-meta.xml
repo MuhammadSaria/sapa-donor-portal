@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This cancellation state is restored when the temporary window finishes. --></help>
+    <label><!-- Original Stripe Cancel At --></label>
+    <name>Original_Stripe_Cancel_At__c</name>
+</CustomFieldTranslation>

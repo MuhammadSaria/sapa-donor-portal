@@ -1,0 +1,15 @@
+<aura:component controller="ReceiptUpdateController" implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+
+    <aura:attribute name="message" type="String" default=""/>
+
+    <lightning:button 
+        label="Mark Receipts as Sent For Single Donation"
+        variant="brand"
+        onclick="{!c.markSent}"
+    />
+
+    <div style="margin-top: 10px; color: #000000 !important; font-weight: bold; font-size: 14;">
+        {!v.message}
+    </div>
+
+</aura:component>

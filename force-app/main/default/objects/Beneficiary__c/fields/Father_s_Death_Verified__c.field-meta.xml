@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Father_s_Death_Verified__c</fullName>
+    <label>Father&apos;s Death Verified</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Death Certificate</fullName>
+                <default>false</default>
+                <label>Death Certificate</label>
+            </value>
+            <value>
+                <fullName>Not Verified</fullName>
+                <default>false</default>
+                <label>Not Verified</label>
+            </value>
+            <value>
+                <fullName>witness</fullName>
+                <default>false</default>
+                <label>witness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

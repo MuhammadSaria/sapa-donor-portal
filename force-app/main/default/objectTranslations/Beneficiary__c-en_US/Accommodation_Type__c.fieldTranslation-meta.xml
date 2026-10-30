@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Accommodation Type --></label>
+    <name>Accommodation_Type__c</name>
+    <picklistValues>
+        <masterLabel>Orphanage</masterLabel>
+        <translation><!-- Orphanage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owned</masterLabel>
+        <translation><!-- Owned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refugee camp</masterLabel>
+        <translation><!-- Refugee camp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rented</masterLabel>
+        <translation><!-- Rented --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unspecified</masterLabel>
+        <translation><!-- Unspecified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With friends</masterLabel>
+        <translation><!-- With friends --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With relatives</masterLabel>
+        <translation><!-- With relatives --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

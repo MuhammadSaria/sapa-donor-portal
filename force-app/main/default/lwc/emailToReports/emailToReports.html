@@ -1,0 +1,87 @@
+<template>
+    <lightning-card title="📧 Send Report via Email" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+
+            <lightning-layout multiple-rows>
+                <!-- Report -->
+                <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+                    <lightning-combobox
+                        name="report"
+                        label="Select Report"
+                        value={selectedReportId}
+                        placeholder="Choose a report..."
+                        options={reportOptions}
+                        onchange={handleReportChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <!-- Template -->
+                <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+                    <lightning-combobox
+                        name="template"
+                        label="Select Email Template"
+                        value={selectedTemplateId}
+                        placeholder="Choose an email template..."
+                        options={templateOptions}
+                        onchange={handleTemplateChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <!-- Email Column -->
+                <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+                    <lightning-combobox
+                        name="emailColumn"
+                        label="Select Email Column"
+                        value={selectedEmailColumn}
+                        placeholder="Choose email column..."
+                        options={emailColumnOptions}
+                        onchange={handleEmailColumnChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+                <lightning-combobox
+                name="fromEmail"
+                label="From Email Address"
+                value={selectedFromOption}
+                placeholder="Choose From address..."
+                options={fromEmailOptions}
+                onchange={handleFromChange}>
+                </lightning-combobox>
+                </lightning-layout-item>
+
+                <!-- Buttons -->
+                <lightning-layout-item size="12" padding="around-small" class="slds-align_absolute-center">
+                    <lightning-button variant="neutral" label="Preview Email" icon-name="utility:preview" onclick={handlePreview}></lightning-button>
+                    <lightning-button variant="brand" class="slds-m-left_small" label="Send Emails" icon-name="utility:email" onclick={handleSendEmail}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+
+    <!-- Modal Preview -->
+    <template if:true={isPreviewOpen}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning-button-icon icon-name="utility:close" class="slds-modal__close" title="Close" onclick={closePreview}></lightning-button-icon>
+                    <h2 class="slds-text-heading_medium">Email Preview</h2>
+                </header>
+               <!-- Modal content area (use this exact div) -->
+<div data-id="previewBody" lwc:dom="manual" class="slds-p-top_small"
+     style="border:1px solid #ddd; padding:10px; border-radius:6px; max-height:60vh; overflow:auto;">
+    <!-- content will be injected here via JS -->
+</div>
+
+               <footer class="modern-nav-footer centered-footer">
+    <button class="nav-link" onclick={handlePrev} disabled={isPrevDisabled}>← Previous</button>
+    <button class="nav-link" onclick={handleNext} disabled={isNextDisabled}>Next →</button>
+   
+</footer>
+
+
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

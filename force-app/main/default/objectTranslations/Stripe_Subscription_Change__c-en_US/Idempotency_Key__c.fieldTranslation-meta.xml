@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Prevents duplicate Stripe schedule mutations during retries. --></help>
+    <label><!-- Idempotency Key --></label>
+    <name>Idempotency_Key__c</name>
+</CustomFieldTranslation>

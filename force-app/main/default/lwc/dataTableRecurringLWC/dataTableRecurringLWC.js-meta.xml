@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__Tab</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+
+        <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="records" type ="@salesforce/schema/GiftDefaultDesignation[]" label="Input: List Allocation" role="inputOnly"/>
+            <property name="Heading" type ="string" label="Heading" role="inputOnly"/>
+
+            <property name="recordslst" type ="@salesforce/schema/GiftDefaultDesignation[]" label="OUTPUT 1: Default Designations (Commitment)" role="outputOnly"/>
+            
+            <property name="transactionDesignationsOutput" type="@salesforce/schema/GiftTransactionDesignation[]" label="OUTPUT 2: Transaction Designations (Transaction)" role="outputOnly"/>
+
+            <property name="recurringRecordsOutput" type ="@salesforce/schema/GiftDefaultDesignation[]" label="Legacy Recurring Output (Ignore)" role="outputOnly"/>
+            
+            <property name="TotalSingle" type ="string" label="Total" role="outputOnly"/>
+            <property name="SummarySingleAll" type ="string" label="SummarySingleAll" role="outputOnly"/>
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

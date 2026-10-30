@@ -1,0 +1,114 @@
+<template>
+    <lightning-card class="void-card">
+        <div class="slds-p-around_medium">
+            <!-- Loading State -->
+            <template if:true={isLoading}>
+                <div class="loading-container">
+                    <lightning-spinner 
+                        alternative-text="Cancelling subscription..." 
+                        size="medium"
+                        variant="brand">
+                    </lightning-spinner>
+                    <p class="slds-text-body_small slds-m-top_small">Processing cancellation...</p>
+                </div>
+            </template>
+
+            <!-- Main Content -->
+            <template if:false={isLoading}>
+                <!-- Warning Alert -->
+                <div class="slds-notify slds-notify_alert slds-alert_warning slds-m-bottom_medium" role="alert">
+                    <span class="slds-assistive-text">warning</span>
+                    <lightning-icon icon-name="utility:warning" size="small" class="slds-m-right_x-small"></lightning-icon>
+                    <strong>This action cannot be undone.</strong> The subscription will be immediately cancelled in Stripe.
+                </div>
+
+                <!-- Subscription Details -->
+                <div class="subscription-details">
+                    <div class="detail-row">
+                        <span class="detail-label">
+                            <lightning-icon icon-name="standard:recurring_donation" size="small"></lightning-icon>
+                            Subscription ID:
+                        </span>
+                        <span class="detail-value">{subscriptionId}</span>
+                    </div>
+                </div>
+
+                <!-- Closed Reason Field -->
+                <div class="slds-m-vertical_medium">
+                    <lightning-record-edit-form
+                        record-id={recordId}
+                        object-api-name="GiftCommitment">
+                        <lightning-input-field
+                            field-name="ClosedReason__c"
+                            value={closedReason}
+                            onchange={handleClosedReasonChange}
+                            required>
+                        </lightning-input-field>
+                    </lightning-record-edit-form>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="slds-m-top_large button-group">
+                    <lightning-button
+                        label="Cancel"
+                        variant="neutral"
+                        onclick={handleCancel}
+                        disabled={isLoading}>
+                    </lightning-button>
+
+                    <lightning-button
+                        label="Cancel Subscription"
+                        variant="destructive"
+                        onclick={handleVoid}
+                        disabled={isLoading}
+                        class="slds-m-left_small">
+                    </lightning-button>
+                </div>
+            </template>
+        </div>
+
+        <!-- Confirmation Modal -->
+        <template if:true={showConfirmModal}>
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header slds-theme_alert-texture">
+                        <h2 class="slds-text-heading_medium">
+                            <lightning-icon icon-name="utility:error" size="small"></lightning-icon>
+                            Confirm Subscription Cancellation
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <p>You are about to <strong>permanently cancel</strong> this Stripe subscription.</p>
+                        <p class="slds-m-top_medium">
+                            <strong>Subscription ID:</strong><br/>
+                            <span class="subscription-id-display">{subscriptionId}</span>
+                        </p>
+                        <p class="slds-m-top_medium">
+                            <strong>Closed Reason:</strong><br/>
+                            <span class="reason-display">{closedReason}</span>
+                        </p>
+                        <p class="slds-text-color_weak slds-m-top_large slds-text-body_small">
+                            This action cannot be undone. Future recurring payments will be stopped.
+                        </p>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button 
+                            variant="neutral" 
+                            label="Go Back" 
+                            onclick={closeConfirmModal}
+                            disabled={isLoading}>
+                        </lightning-button>
+                        <lightning-button 
+                            variant="destructive" 
+                            label="Yes, Cancel Subscription" 
+                            onclick={confirmCancellation}
+                            disabled={isLoading}
+                            class="slds-m-left_small">
+                        </lightning-button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Route_Key__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Stores the normalized SHA-256 key used to prevent duplicate LaunchGood Project URL and Special Request mappings.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>System-generated duplicate-prevention key. Do not edit this value manually.</inlineHelpText>
+    <label>Route Key</label>
+    <length>64</length>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,97 @@
+<template>
+    <section class="allocation-editor" aria-label={Heading}>
+        <header class="allocation-editor__header">
+            <h2 class="allocation-editor__title">{Heading}</h2>
+        </header>
+
+        <div class="allocation-list">
+            <template for:each={recordl} for:item="record" for:index="index">
+                <article class="allocation-row" key={record.Id}>
+                    <div class="allocation-row__header">
+                        <div class="allocation-field allocation-field--fund">
+                            <label class="allocation-label">Allocation</label>
+                            <c-generic-lookup
+                                name="GiftDesignation"
+                                label=""
+                                selected-icon-name="standard:account"
+                                object-label="GiftDesignation"
+                                object-api-name="GiftDesignation"
+                                field-api-name="Name"
+                                other-field-api-name=""
+                                read-onlyvar=true
+                                onvalueselected={handleInputChange}
+                                value=GiftDesignation
+                                data-index={index}
+                                selected-record-name={record.Fund_Name__c}>
+                            </c-generic-lookup>
+                        </div>
+
+                        <div class="allocation-actions">
+                            <lightning-button-icon
+                                icon-name="utility:delete"
+                                alternative-text="Delete allocation"
+                                title="Delete allocation"
+                                variant="border-filled"
+                                data-id={record.Id}
+                                data-index={index}
+                                onclick={Removerow}>
+                            </lightning-button-icon>
+                        </div>
+                    </div>
+
+                    <div class="allocation-controls">
+                        <div class="allocation-field allocation-field--amount">
+                            <lightning-input
+                                name="Amount__c"
+                                label="Amount"
+                                type="currency"
+                                value={record.Amount__c}
+                                onchange={handleInputChange}
+                                data-index={index}
+                                required>
+                            </lightning-input>
+                        </div>
+
+                        <div class="allocation-field">
+                            <lightning-combobox
+                                name="Locations__c"
+                                label="Location"
+                                data-index={index}
+                                value={record.Locations__c}
+                                options={record.locationOptions}
+                                onchange={handleInputChange}
+                                required>
+                            </lightning-combobox>
+                        </div>
+
+                        <div class="allocation-field">
+                            <lightning-combobox
+                                name="Intention__c"
+                                label="Intention"
+                                data-index={index}
+                                value={record.Intention__c}
+                                options={intentionOptions}
+                                onchange={handleInputChange}
+                                required>
+                            </lightning-combobox>
+                        </div>
+                    </div>
+
+                    <template if:true={record.Message}>
+                        <p class="allocation-error">{record.Message}</p>
+                    </template>
+                </article>
+            </template>
+        </div>
+
+        <footer class="allocation-footer">
+            <lightning-button
+                onclick={validateForm}
+                variant="brand"
+                type="button"
+                name="Save"
+                label="Save">
+            </lightning-button>
+        </footer>
+    </section>
+</template>

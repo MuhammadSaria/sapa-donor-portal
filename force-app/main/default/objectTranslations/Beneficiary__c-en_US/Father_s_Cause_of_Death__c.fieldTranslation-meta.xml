@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Father&apos;s Cause of Death --></label>
+    <name>Father_s_Cause_of_Death__c</name>
+    <picklistValues>
+        <masterLabel>a cardiac arrest</masterLabel>
+        <translation><!-- a cardiac arrest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a fever</masterLabel>
+        <translation><!-- a fever --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a heart attack</masterLabel>
+        <translation><!-- a heart attack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an accident</masterLabel>
+        <translation><!-- an accident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an earthquake</masterLabel>
+        <translation><!-- an earthquake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an electrical current</masterLabel>
+        <translation><!-- an electrical current --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an illness</masterLabel>
+        <translation><!-- an illness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>asthma</masterLabel>
+        <translation><!-- asthma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>bomb blast</masterLabel>
+        <translation><!-- bomb blast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>brain hemorrhage</masterLabel>
+        <translation><!-- brain hemorrhage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>brain paralysis</masterLabel>
+        <translation><!-- brain paralysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>burned</masterLabel>
+        <translation><!-- burned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cancer</masterLabel>
+        <translation><!-- cancer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cholera</masterLabel>
+        <translation><!-- cholera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>dengue fever</masterLabel>
+        <translation><!-- dengue fever --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>diabetes</masterLabel>
+        <translation><!-- diabetes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>drowned</masterLabel>
+        <translation><!-- drowned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>earthquake</masterLabel>
+        <translation><!-- earthquake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>electrical current</masterLabel>
+        <translation><!-- electrical current --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>epilepsy</masterLabel>
+        <translation><!-- epilepsy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fever</masterLabel>
+        <translation><!-- fever --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>firing</masterLabel>
+        <translation><!-- firing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flood</masterLabel>
+        <translation><!-- flood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flooding</masterLabel>
+        <translation><!-- flooding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>heart failure</masterLabel>
+        <translation><!-- heart failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>heat stroke</masterLabel>
+        <translation><!-- heat stroke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hepatitis</masterLabel>
+        <translation><!-- hepatitis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hypertension</masterLabel>
+        <translation><!-- hypertension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>jaundice</masterLabel>
+        <translation><!-- jaundice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>kidney failure</masterLabel>
+        <translation><!-- kidney failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>killed</masterLabel>
+        <translation><!-- killed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lightening strike</masterLabel>
+        <translation><!-- lightening strike --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>liver failure</masterLabel>
+        <translation><!-- liver failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lung failure</masterLabel>
+        <translation><!-- lung failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>malaria</masterLabel>
+        <translation><!-- malaria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>martyred</masterLabel>
+        <translation><!-- martyred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>murder</masterLabel>
+        <translation><!-- murder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>murdered</masterLabel>
+        <translation><!-- murdered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>natural causes</masterLabel>
+        <translation><!-- natural causes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>natural disaster</masterLabel>
+        <translation><!-- natural disaster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>paralysis</masterLabel>
+        <translation><!-- paralysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pneumonia</masterLabel>
+        <translation><!-- pneumonia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>road accident</masterLabel>
+        <translation><!-- road accident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>severe injury in rainstorm</masterLabel>
+        <translation><!-- severe injury in rainstorm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>snakebite</masterLabel>
+        <translation><!-- snakebite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>stroke</masterLabel>
+        <translation><!-- stroke --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>suffocation</masterLabel>
+        <translation><!-- suffocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>suicide</masterLabel>
+        <translation><!-- suicide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tetanus</masterLabel>
+        <translation><!-- tetanus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tuberculosis</masterLabel>
+        <translation><!-- tuberculosis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>typhoid</masterLabel>
+        <translation><!-- typhoid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unknown causes</masterLabel>
+        <translation><!-- unknown causes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unspecified</masterLabel>
+        <translation><!-- unspecified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>war</masterLabel>
+        <translation><!-- war --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

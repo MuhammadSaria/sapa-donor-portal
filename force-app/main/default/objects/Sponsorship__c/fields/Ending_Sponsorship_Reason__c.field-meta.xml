@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ending_Sponsorship_Reason__c</fullName>
+    <label>Ending Sponsorship Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancelled Direct Debit</fullName>
+                <default>false</default>
+                <label>Cancelled Direct Debit</label>
+            </value>
+            <value>
+                <fullName>Not Renewed - Annual - No Response from Donor</fullName>
+                <default>false</default>
+                <label>Not Renewed - Annual - No Response from Donor</label>
+            </value>
+            <value>
+                <fullName>Over 18</fullName>
+                <default>false</default>
+                <label>Over 18</label>
+            </value>
+            <value>
+                <fullName>Dropped out of school</fullName>
+                <default>false</default>
+                <label>Dropped out of school</label>
+            </value>
+            <value>
+                <fullName>Moved home</fullName>
+                <default>false</default>
+                <label>Moved home</label>
+            </value>
+            <value>
+                <fullName>Graduated</fullName>
+                <default>false</default>
+                <label>Graduated</label>
+            </value>
+            <value>
+                <fullName>Donor request to swap child</fullName>
+                <default>false</default>
+                <label>Donor request to swap child</label>
+            </value>
+            <value>
+                <fullName>Donor request to end</fullName>
+                <default>false</default>
+                <label>Donor request to end</label>
+            </value>
+            <value>
+                <fullName>Set up in error</fullName>
+                <default>false</default>
+                <label>Set up in error</label>
+            </value>
+            <value>
+                <fullName>Died</fullName>
+                <default>false</default>
+                <label>Died</label>
+            </value>
+            <value>
+                <fullName>Not Renewed - Annual - Donor Request to End</fullName>
+                <default>false</default>
+                <label>Not Renewed - Annual - Donor Request to End</label>
+            </value>
+            <value>
+                <fullName>Child got sick</fullName>
+                <default>false</default>
+                <label>Child got sick</label>
+            </value>
+            <value>
+                <fullName>Child moved school</fullName>
+                <default>false</default>
+                <label>Child moved school</label>
+            </value>
+            <value>
+                <fullName>Closed due to missed / failed payments</fullName>
+                <default>false</default>
+                <label>Closed due to missed / failed payments</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

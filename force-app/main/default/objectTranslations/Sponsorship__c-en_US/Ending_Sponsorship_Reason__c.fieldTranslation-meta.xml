@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ending Sponsorship Reason --></label>
+    <name>Ending_Sponsorship_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Cancelled Direct Debit</masterLabel>
+        <translation><!-- Cancelled Direct Debit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child got sick</masterLabel>
+        <translation><!-- Child got sick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child moved school</masterLabel>
+        <translation><!-- Child moved school --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed due to missed / failed payments</masterLabel>
+        <translation><!-- Closed due to missed / failed payments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Died</masterLabel>
+        <translation><!-- Died --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Donor request to end</masterLabel>
+        <translation><!-- Donor request to end --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Donor request to swap child</masterLabel>
+        <translation><!-- Donor request to swap child --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped out of school</masterLabel>
+        <translation><!-- Dropped out of school --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graduated</masterLabel>
+        <translation><!-- Graduated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved home</masterLabel>
+        <translation><!-- Moved home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Renewed - Annual - Donor Request to End</masterLabel>
+        <translation><!-- Not Renewed - Annual - Donor Request to End --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Renewed - Annual - No Response from Donor</masterLabel>
+        <translation><!-- Not Renewed - Annual - No Response from Donor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over 18</masterLabel>
+        <translation><!-- Over 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Set up in error</masterLabel>
+        <translation><!-- Set up in error --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- School --></label>
+    <name>School__c</name>
+    <picklistValues>
+        <masterLabel>READ Foundation College Patehka</masterLabel>
+        <translation><!-- READ Foundation College Patehka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Poona</masterLabel>
+        <translation><!-- READ Foundation College Poona --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Ratta Gala</masterLabel>
+        <translation><!-- READ Foundation College Ratta Gala --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Rera (Boys)</masterLabel>
+        <translation><!-- READ Foundation College Rera (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Rera (Girls)</masterLabel>
+        <translation><!-- READ Foundation College Rera (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Sarsawa</masterLabel>
+        <translation><!-- READ Foundation College Sarsawa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Sehnsa</masterLabel>
+        <translation><!-- READ Foundation College Sehnsa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Sehnsa (Boys)</masterLabel>
+        <translation><!-- READ Foundation College Sehnsa (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Smahni</masterLabel>
+        <translation><!-- READ Foundation College Smahni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation College Sroll</masterLabel>
+        <translation><!-- READ Foundation College Sroll --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation Girls High School Noor Jamal</masterLabel>
+        <translation><!-- READ Foundation Girls High School Noor Jamal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation Montessori School Fatta Bhand</masterLabel>
+        <translation><!-- READ Foundation Montessori School Fatta Bhand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation Montessori School Noor Jamal</masterLabel>
+        <translation><!-- READ Foundation Montessori School Noor Jamal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Abbasspur (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Abbasspur (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Abbasspur (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Abbasspur (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Abdullahpur</masterLabel>
+        <translation><!-- READ Foundation School Abdullahpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Academy Muzaffarabad</masterLabel>
+        <translation><!-- READ Foundation School Academy Muzaffarabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Afzalpur</masterLabel>
+        <translation><!-- READ Foundation School Afzalpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Ali Baig</masterLabel>
+        <translation><!-- READ Foundation School Ali Baig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Aliot</masterLabel>
+        <translation><!-- READ Foundation School Aliot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Ambor Boys (Refugee Camp)</masterLabel>
+        <translation><!-- READ Foundation School Ambor Boys (Refugee Camp) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Ambor Girls (Refugee Camp)</masterLabel>
+        <translation><!-- READ Foundation School Ambor Girls (Refugee Camp) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Anderlla Kotera</masterLabel>
+        <translation><!-- READ Foundation School Anderlla Kotera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Anohi Sarhota</masterLabel>
+        <translation><!-- READ Foundation School Anohi Sarhota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Antlian</masterLabel>
+        <translation><!-- READ Foundation School Antlian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Arja</masterLabel>
+        <translation><!-- READ Foundation School Arja --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Arlian</masterLabel>
+        <translation><!-- READ Foundation School Arlian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Artakha Awan Patti</masterLabel>
+        <translation><!-- READ Foundation School Artakha Awan Patti --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Awanabad (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Awanabad (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Awanabad (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Awanabad (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Badhial</masterLabel>
+        <translation><!-- READ Foundation School Badhial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Badhiar Bakalan</masterLabel>
+        <translation><!-- READ Foundation School Badhiar Bakalan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Badyar</masterLabel>
+        <translation><!-- READ Foundation School Badyar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bagh</masterLabel>
+        <translation><!-- READ Foundation School Bagh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bagh (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Bagh (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bagh (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Bagh (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bagh City (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Bagh City (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Baghser</masterLabel>
+        <translation><!-- READ Foundation School Baghser --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Baisa Kalan Hazara</masterLabel>
+        <translation><!-- READ Foundation School Baisa Kalan Hazara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bal</masterLabel>
+        <translation><!-- READ Foundation School Bal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bandala</masterLabel>
+        <translation><!-- READ Foundation School Bandala --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bandi (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Bandi (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bandi Bakalan</masterLabel>
+        <translation><!-- READ Foundation School Bandi Bakalan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bangoin</masterLabel>
+        <translation><!-- READ Foundation School Bangoin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bani Minhasan</masterLabel>
+        <translation><!-- READ Foundation School Bani Minhasan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bani Pasari</masterLabel>
+        <translation><!-- READ Foundation School Bani Pasari --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Banjonsa</masterLabel>
+        <translation><!-- READ Foundation School Banjonsa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Banjonsan</masterLabel>
+        <translation><!-- READ Foundation School Banjonsan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Baral</masterLabel>
+        <translation><!-- READ Foundation School Baral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Barali</masterLabel>
+        <translation><!-- READ Foundation School Barali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Barhing</masterLabel>
+        <translation><!-- READ Foundation School Barhing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Barnala</masterLabel>
+        <translation><!-- READ Foundation School Barnala --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Barnala (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Barnala (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Barsali</masterLabel>
+        <translation><!-- READ Foundation School Barsali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Baseen</masterLabel>
+        <translation><!-- READ Foundation School Baseen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Basnara (Refugee Camp)</masterLabel>
+        <translation><!-- READ Foundation School Basnara (Refugee Camp) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Basnata Khairabad</masterLabel>
+        <translation><!-- READ Foundation School Basnata Khairabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Basnata Khairabad (duplicate)</masterLabel>
+        <translation><!-- READ Foundation School Basnata Khairabad (duplicate) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bat Bani</masterLabel>
+        <translation><!-- READ Foundation School Bat Bani --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bat Bani (duplicate)</masterLabel>
+        <translation><!-- READ Foundation School Bat Bani (duplicate) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Batlian</masterLabel>
+        <translation><!-- READ Foundation School Batlian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Beer Pani</masterLabel>
+        <translation><!-- READ Foundation School Beer Pani --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bees Bagla</masterLabel>
+        <translation><!-- READ Foundation School Bees Bagla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bethak Awanabad (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Bethak Awanabad (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bethak Awanabad (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Bethak Awanabad (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bhara Kahu</masterLabel>
+        <translation><!-- READ Foundation School Bhara Kahu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bhial</masterLabel>
+        <translation><!-- READ Foundation School Bhial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bhimber</masterLabel>
+        <translation><!-- READ Foundation School Bhimber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bhimber Bians</masterLabel>
+        <translation><!-- READ Foundation School Bhimber Bians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bhimber Gharbi</masterLabel>
+        <translation><!-- READ Foundation School Bhimber Gharbi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bhimber Gharbi (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Bhimber Gharbi (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bhimber Rajani</masterLabel>
+        <translation><!-- READ Foundation School Bhimber Rajani --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bindi</masterLabel>
+        <translation><!-- READ Foundation School Bindi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bindli</masterLabel>
+        <translation><!-- READ Foundation School Bindli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Brahtla</masterLabel>
+        <translation><!-- READ Foundation School Brahtla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Broh</masterLabel>
+        <translation><!-- READ Foundation School Broh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Bugna</masterLabel>
+        <translation><!-- READ Foundation School Bugna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chahawla</masterLabel>
+        <translation><!-- READ Foundation School Chahawla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chahi</masterLabel>
+        <translation><!-- READ Foundation School Chahi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chak</masterLabel>
+        <translation><!-- READ Foundation School Chak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chak Barmang</masterLabel>
+        <translation><!-- READ Foundation School Chak Barmang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chak Rawalakot (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Chak Rawalakot (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chak Rawalakot (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Chak Rawalakot (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chakar</masterLabel>
+        <translation><!-- READ Foundation School Chakar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chakar (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Chakar (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chakhama</masterLabel>
+        <translation><!-- READ Foundation School Chakhama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chaknoor</masterLabel>
+        <translation><!-- READ Foundation School Chaknoor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chakothi</masterLabel>
+        <translation><!-- READ Foundation School Chakothi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chakswari</masterLabel>
+        <translation><!-- READ Foundation School Chakswari --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chamankot</masterLabel>
+        <translation><!-- READ Foundation School Chamankot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chambanar (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Chambanar (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chambanar (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Chambanar (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chanari</masterLabel>
+        <translation><!-- READ Foundation School Chanari --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chanari (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Chanari (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Changpur</masterLabel>
+        <translation><!-- READ Foundation School Changpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chaprian</masterLabel>
+        <translation><!-- READ Foundation School Chaprian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Charhoi (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Charhoi (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Charhoi (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Charhoi (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Charhoi (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Charhoi (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Charsadda</masterLabel>
+        <translation><!-- READ Foundation School Charsadda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Charsadda (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Charsadda (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Charsadda (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Charsadda (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chathian</masterLabel>
+        <translation><!-- READ Foundation School Chathian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chathian (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Chathian (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chatrorah</masterLabel>
+        <translation><!-- READ Foundation School Chatrorah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chattar No. 2 (Refugee Camp)</masterLabel>
+        <translation><!-- READ Foundation School Chattar No. 2 (Refugee Camp) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chehla</masterLabel>
+        <translation><!-- READ Foundation School Chehla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chirala</masterLabel>
+        <translation><!-- READ Foundation School Chirala --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chirhan</masterLabel>
+        <translation><!-- READ Foundation School Chirhan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chitra Topi</masterLabel>
+        <translation><!-- READ Foundation School Chitra Topi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chitterpari</masterLabel>
+        <translation><!-- READ Foundation School Chitterpari --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chongra</masterLabel>
+        <translation><!-- READ Foundation School Chongra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chota Gala</masterLabel>
+        <translation><!-- READ Foundation School Chota Gala --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chowki</masterLabel>
+        <translation><!-- READ Foundation School Chowki --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chowki (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Chowki (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chowki Moong</masterLabel>
+        <translation><!-- READ Foundation School Chowki Moong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Chur Chak</masterLabel>
+        <translation><!-- READ Foundation School Chur Chak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School City Campus Kotli</masterLabel>
+        <translation><!-- READ Foundation School City Campus Kotli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dabsi</masterLabel>
+        <translation><!-- READ Foundation School Dabsi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dadyal</masterLabel>
+        <translation><!-- READ Foundation School Dadyal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dal Bandala (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Dal Bandala (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dal Bandala (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Dal Bandala (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Damot</masterLabel>
+        <translation><!-- READ Foundation School Damot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Danda Dheri</masterLabel>
+        <translation><!-- READ Foundation School Danda Dheri --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dandli</masterLabel>
+        <translation><!-- READ Foundation School Dandli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dangali</masterLabel>
+        <translation><!-- READ Foundation School Dangali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Danna</masterLabel>
+        <translation><!-- READ Foundation School Danna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dar Bandala (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Dar Bandala (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Darkooti Cross</masterLabel>
+        <translation><!-- READ Foundation School Darkooti Cross --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Datote</masterLabel>
+        <translation><!-- READ Foundation School Datote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Devi Gali</masterLabel>
+        <translation><!-- READ Foundation School Devi Gali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhak Thub</masterLabel>
+        <translation><!-- READ Foundation School Dhak Thub --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhal Kaka</masterLabel>
+        <translation><!-- READ Foundation School Dhal Kaka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhal Qazian</masterLabel>
+        <translation><!-- READ Foundation School Dhal Qazian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhal Qazian Central</masterLabel>
+        <translation><!-- READ Foundation School Dhal Qazian Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhamawa Kassgumma</masterLabel>
+        <translation><!-- READ Foundation School Dhamawa Kassgumma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhannan</masterLabel>
+        <translation><!-- READ Foundation School Dhannan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhanni Bakalan</masterLabel>
+        <translation><!-- READ Foundation School Dhanni Bakalan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhanwan No. 1</masterLabel>
+        <translation><!-- READ Foundation School Dhanwan No. 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhanwan No. 2</masterLabel>
+        <translation><!-- READ Foundation School Dhanwan No. 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhar Dharach</masterLabel>
+        <translation><!-- READ Foundation School Dhar Dharach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dharay</masterLabel>
+        <translation><!-- READ Foundation School Dharay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dheri Sahibzadaian</masterLabel>
+        <translation><!-- READ Foundation School Dheri Sahibzadaian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dheri Wattan (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Dheri Wattan (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dheri Wattan (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Dheri Wattan (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dheri Wattan (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Dheri Wattan (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhingawali</masterLabel>
+        <translation><!-- READ Foundation School Dhingawali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhirkot</masterLabel>
+        <translation><!-- READ Foundation School Dhirkot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhirkot (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Dhirkot (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhirkot (High)</masterLabel>
+        <translation><!-- READ Foundation School Dhirkot (High) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhirkot (Middle)</masterLabel>
+        <translation><!-- READ Foundation School Dhirkot (Middle) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhirkot (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Dhirkot (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhok Chachan</masterLabel>
+        <translation><!-- READ Foundation School Dhok Chachan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhok Lilian</masterLabel>
+        <translation><!-- READ Foundation School Dhok Lilian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dhundar</masterLabel>
+        <translation><!-- READ Foundation School Dhundar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dobay</masterLabel>
+        <translation><!-- READ Foundation School Dobay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dub</masterLabel>
+        <translation><!-- READ Foundation School Dub --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dub Dhalla</masterLabel>
+        <translation><!-- READ Foundation School Dub Dhalla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Dudhpura</masterLabel>
+        <translation><!-- READ Foundation School Dudhpura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Eidgah</masterLabel>
+        <translation><!-- READ Foundation School Eidgah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School F/1 Mirpur</masterLabel>
+        <translation><!-- READ Foundation School F/1 Mirpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Fafrila</masterLabel>
+        <translation><!-- READ Foundation School Fafrila --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gahi Jaba</masterLabel>
+        <translation><!-- READ Foundation School Gahi Jaba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gala Samiar</masterLabel>
+        <translation><!-- READ Foundation School Gala Samiar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Galota</masterLabel>
+        <translation><!-- READ Foundation School Galota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Garhi Dupatta (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Garhi Dupatta (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Garhi Dupatta (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Garhi Dupatta (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Garhi Dupatta (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Garhi Dupatta (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Garhoon</masterLabel>
+        <translation><!-- READ Foundation School Garhoon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gawan</masterLabel>
+        <translation><!-- READ Foundation School Gawan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gehl</masterLabel>
+        <translation><!-- READ Foundation School Gehl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Ghaniabad</masterLabel>
+        <translation><!-- READ Foundation School Ghaniabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gharthama</masterLabel>
+        <translation><!-- READ Foundation School Gharthama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Ghazipur</masterLabel>
+        <translation><!-- READ Foundation School Ghazipur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gilgit (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Gilgit (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gilgit (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Gilgit (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Girls College Kotli</masterLabel>
+        <translation><!-- READ Foundation School Girls College Kotli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gohar Gali</masterLabel>
+        <translation><!-- READ Foundation School Gohar Gali --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Goharabad</masterLabel>
+        <translation><!-- READ Foundation School Goharabad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Goharabad (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Goharabad (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Goi</masterLabel>
+        <translation><!-- READ Foundation School Goi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gojra (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Gojra (Boys) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gojra (Girls)</masterLabel>
+        <translation><!-- READ Foundation School Gojra (Girls) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gojra (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Gojra (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gonsa</masterLabel>
+        <translation><!-- READ Foundation School Gonsa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Goorah</masterLabel>
+        <translation><!-- READ Foundation School Goorah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Goorah (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Goorah (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gori</masterLabel>
+        <translation><!-- READ Foundation School Gori --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gorikot</masterLabel>
+        <translation><!-- READ Foundation School Gorikot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gudai</masterLabel>
+        <translation><!-- READ Foundation School Gudai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gujar Bandi</masterLabel>
+        <translation><!-- READ Foundation School Gujar Bandi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gujar Bandi (Primary)</masterLabel>
+        <translation><!-- READ Foundation School Gujar Bandi (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gulhar Colony</masterLabel>
+        <translation><!-- READ Foundation School Gulhar Colony --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Gulpur</masterLabel>
+        <translation><!-- READ Foundation School Gulpur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Hadora Bandi</masterLabel>
+        <translation><!-- READ Foundation School Hadora Bandi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Hajeera</masterLabel>
+        <translation><!-- READ Foundation School Hajeera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Haji Pura</masterLabel>
+        <translation><!-- READ Foundation School Haji Pura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Hans Chowki</masterLabel>
+        <translation><!-- READ Foundation School Hans Chowki --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Hari Gehl</masterLabel>
+        <translation><!-- READ Foundation School Hari Gehl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Hari Gehl (Middle)</masterLabel>
+        <translation><!-- READ Foundation School Hari Gehl (Middle) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Hariola</masterLabel>
+        <translation><!-- READ Foundation School Hariola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Haripur</masterLabel>
+        <translation><!-- READ Foundation School Haripur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>READ Foundation School Hattian Bala (Boys)</masterLabel>
+        <translation><!-- READ Foundation School Hattian Bala (Boys) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

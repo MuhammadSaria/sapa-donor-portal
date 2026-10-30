@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_With_Stripe_Support</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Logs are owned by the Automated Process or integration user, so share all of them with the support group.</description>
+        <label>Share with Stripe Support</label>
+        <sharedTo>
+            <group>Stripe_Support</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Occurrence_Count__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

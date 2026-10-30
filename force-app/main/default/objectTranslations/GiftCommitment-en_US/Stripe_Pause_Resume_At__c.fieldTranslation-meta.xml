@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- New pauses resume collection at midnight America/Los_Angeles with daylight saving time applied. --></help>
+    <label><!-- Stripe Pause Resume At --></label>
+    <name>Stripe_Pause_Resume_At__c</name>
+</CustomFieldTranslation>

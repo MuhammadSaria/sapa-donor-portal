@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Runtime Gift Campaign Hierarchy</masterLabel>
+
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>Campaign</object>
+            </objects>
+
+            <property
+                name="title"
+                type="String"
+                label="Title"
+                default="Runtime Gift Campaign Hierarchy"/>
+
+            <property
+                name="giftStatusesCsv"
+                type="String"
+                label="Gift Statuses CSV"
+                default="Paid"
+                description="Comma-separated GiftTransaction status values, for example: Paid or Paid,Fully Refunded"/>
+
+            <property
+                name="startDateText"
+                type="String"
+                label="Start Date"
+                description="Optional. Format: YYYY-MM-DD"/>
+
+            <property
+                name="endDateText"
+                type="String"
+                label="End Date"
+                description="Optional. Format: YYYY-MM-DD"/>
+
+            <property
+                name="includeSourceCodeAttribution"
+                type="Boolean"
+                label="Include Outreach Source Code Attribution"
+                default="false"/>
+
+            <property
+                name="autoExpand"
+                type="Boolean"
+                label="Auto Expand Hierarchy"
+                default="false"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

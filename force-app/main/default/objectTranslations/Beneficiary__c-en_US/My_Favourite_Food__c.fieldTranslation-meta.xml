@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- My Favourite Food --></label>
+    <name>My_Favourite_Food__c</name>
+    <picklistValues>
+        <masterLabel>Chocolate</masterLabel>
+        <translation><!-- Chocolate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eggs</masterLabel>
+        <translation><!-- Eggs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

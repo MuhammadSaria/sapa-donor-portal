@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+
+    <lightning:button 
+        label="Printed Receipt Mass Production - Recurring Donation"
+        variant="brand"
+        onclick="{!c.go}"
+        class="customButton"
+    />
+
+</aura:component>

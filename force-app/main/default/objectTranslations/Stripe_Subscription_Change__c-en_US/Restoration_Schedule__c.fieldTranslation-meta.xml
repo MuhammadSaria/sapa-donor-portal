@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This schedule resumes the original amount and cadence after the temporary window. --></help>
+    <label><!-- Restoration Schedule --></label>
+    <name>Restoration_Schedule__c</name>
+    <relationshipLabel><!-- Stripe Restoration Changes --></relationshipLabel>
+</CustomFieldTranslation>

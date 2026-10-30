@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Stores the requested configuration date separately from the first actual Stripe payment date. --></help>
+    <label><!-- Requested Configuration Start Date --></label>
+    <name>Requested_Configuration_Start_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Favourite Subject --></label>
+    <name>Favourite_Subject__c</name>
+    <picklistValues>
+        <masterLabel>Arabic</masterLabel>
+        <translation><!-- Arabic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Art</masterLabel>
+        <translation><!-- Art --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civics</masterLabel>
+        <translation><!-- Civics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drawing</masterLabel>
+        <translation><!-- Drawing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English</masterLabel>
+        <translation><!-- English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>French</masterLabel>
+        <translation><!-- French --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geography</masterLabel>
+        <translation><!-- Geography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>History</masterLabel>
+        <translation><!-- History --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Language</masterLabel>
+        <translation><!-- Language --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math</masterLabel>
+        <translation><!-- Math --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physics</masterLabel>
+        <translation><!-- Physics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reading</masterLabel>
+        <translation><!-- Reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Religion</masterLabel>
+        <translation><!-- Religion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science</masterLabel>
+        <translation><!-- Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sport</masterLabel>
+        <translation><!-- Sport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports</masterLabel>
+        <translation><!-- Sports --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Udecided</masterLabel>
+        <translation><!-- Udecided --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

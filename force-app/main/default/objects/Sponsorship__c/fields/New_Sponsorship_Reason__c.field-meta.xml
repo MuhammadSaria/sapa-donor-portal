@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Sponsorship_Reason__c</fullName>
+    <label>New Sponsorship Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Sponsorship</fullName>
+                <default>false</default>
+                <label>New Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Over 18 - Replacemen</fullName>
+                <default>false</default>
+                <label>Over 18 - Replacemen</label>
+            </value>
+            <value>
+                <fullName>Moved home - Replacement</fullName>
+                <default>false</default>
+                <label>Moved home - Replacement</label>
+            </value>
+            <value>
+                <fullName>Dropped out of school - Replacement</fullName>
+                <default>false</default>
+                <label>Dropped out of school - Replacement</label>
+            </value>
+            <value>
+                <fullName>Graduated - Replacement</fullName>
+                <default>false</default>
+                <label>Graduated - Replacement</label>
+            </value>
+            <value>
+                <fullName>Child got sick - Replacement</fullName>
+                <default>false</default>
+                <label>Child got sick - Replacement</label>
+            </value>
+            <value>
+                <fullName>Moved school - Replacement</fullName>
+                <default>false</default>
+                <label>Moved school - Replacement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

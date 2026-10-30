@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restoration_First_Payment_Date__c</fullName>
+    <description>First actual Stripe payment date after the original amount and cadence resume.</description>
+    <inlineHelpText>This date follows the original billing calendar.</inlineHelpText>
+    <label>Restoration First Payment Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

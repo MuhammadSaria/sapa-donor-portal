@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New Sponsorship Reason --></label>
+    <name>New_Sponsorship_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Child got sick - Replacement</masterLabel>
+        <translation><!-- Child got sick - Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped out of school - Replacement</masterLabel>
+        <translation><!-- Dropped out of school - Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graduated - Replacement</masterLabel>
+        <translation><!-- Graduated - Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved home - Replacement</masterLabel>
+        <translation><!-- Moved home - Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved school - Replacement</masterLabel>
+        <translation><!-- Moved school - Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Sponsorship</masterLabel>
+        <translation><!-- New Sponsorship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over 18 - Replacemen</masterLabel>
+        <translation><!-- Over 18 - Replacemen --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

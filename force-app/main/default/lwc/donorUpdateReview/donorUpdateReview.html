@@ -1,0 +1,83 @@
+<template>
+    <lightning-card title="SAPA Portal: Pending Donor Updates" icon-name="standard:account">
+        <div class="slds-p-horizontal_medium">
+            <template if:true={loading}>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </template>
+
+            <template if:true={hasNoRows}>
+                <p class="slds-text-body_regular slds-p-vertical_medium">No submissions are waiting for review.</p>
+            </template>
+
+            <template if:true={hasRows}>
+                <p if:true={isQueueCapped} class="slds-text-color_weak slds-p-bottom_small">
+                    Showing the oldest 200 waiting submissions. More will appear as these are reviewed.
+                </p>
+                <p class="slds-text-color_weak slds-p-bottom_small">
+                    Choose Accept or Reject for each part the donor changed, then click Save review.
+                </p>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col">Donor</th>
+                            <th scope="col">Submitted</th>
+                            <th scope="col">Phone: current → new</th>
+                            <th scope="col">Address: current → new</th>
+                            <th scope="col">Decision</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={rows} for:item="row">
+                            <tr key={row.accountId}>
+                                <td>{row.donorName}</td>
+                                <td><lightning-formatted-date-time value={row.submittedDate}></lightning-formatted-date-time></td>
+                                <td>
+                                    <template if:true={row.phoneChanged}>
+                                        <span class="slds-text-color_weak">{row.currentPhone}</span> →
+                                        <strong class="review-changed">{row.newPhone}</strong>
+                                        <lightning-radio-group
+                                            name={row.phoneGroup} label="Phone decision" variant="label-hidden"
+                                            options={decisionOptions} value={row.phoneDecision} type="button"
+                                            data-id={row.accountId} onchange={handlePhoneDecision}
+                                        ></lightning-radio-group>
+                                    </template>
+                                    <template if:false={row.phoneChanged}>
+                                        <span class="slds-text-color_weak">{row.currentPhone}</span>
+                                    </template>
+                                </td>
+                                <td>
+                                    <template if:true={row.addressChanged}>
+                                        <div class="slds-text-color_weak">{row.currentAddress}</div>
+                                        <div class="review-changed">→ {row.newAddress}</div>
+                                        <lightning-radio-group
+                                            name={row.addressGroup} label="Address decision" variant="label-hidden"
+                                            options={decisionOptions} value={row.addressDecision} type="button"
+                                            data-id={row.accountId} onchange={handleAddressDecision}
+                                        ></lightning-radio-group>
+                                    </template>
+                                    <template if:false={row.addressChanged}>
+                                        <span class="slds-text-color_weak">{row.currentAddress}</span>
+                                    </template>
+                                </td>
+                                <td>
+                                    <template if:true={row.showReason}>
+                                        <lightning-textarea
+                                            label="Reason" variant="label-hidden" value={row.reason}
+                                            placeholder="Reason for rejecting (optional, saved on the donor record)"
+                                            data-id={row.accountId} onchange={handleReasonChange}
+                                        ></lightning-textarea>
+                                    </template>
+                                    <lightning-button
+                                        label="Save review" variant="brand" data-id={row.accountId}
+                                        disabled={row.saving} onclick={handleSave}
+                                        class="slds-m-top_x-small"
+                                    ></lightning-button>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </template>
+        </div>
+    </lightning-card>
+</template>

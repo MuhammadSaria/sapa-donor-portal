@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>false</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>SentOsEngagementConnector_f35cea64_3fa6_40de_bedc_91fff33603b9</dataConnector>
+    <dataConnectorType>IngestApi</dataConnectorType>
+    <dataExtractMethods>FULL_REFRESH</dataExtractMethods>
+    <dataPlatformDataSetItemName>INGESTAPI</dataPlatformDataSetItemName>
+    <dataSource>SentOsEngagementConnector_f35cea64_3fa6_40de_bedc_91fff33603b9</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>Record View</masterLabel>
+    <mktDataLakeObject>RecordView__dll</mktDataLakeObject>
+    <mktDataTranObject>RecordView</mktDataTranObject>
+</DataStreamDefinition>

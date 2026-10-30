@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for missed payment --></label>
+    <name>Reason_for_missed_payment__c</name>
+    <picklistValues>
+        <masterLabel>Direct Debit Authorisation failed</masterLabel>
+        <translation><!-- Direct Debit Authorisation failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Donor Cancelled Direct Debit</masterLabel>
+        <translation><!-- Donor Cancelled Direct Debit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Donors Card has Expired</masterLabel>
+        <translation><!-- Donors Card has Expired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Funds</masterLabel>
+        <translation><!-- Insufficient Funds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issues with the Donors Card</masterLabel>
+        <translation><!-- Issues with the Donors Card --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment currency doesn&apos;t match authorisation</masterLabel>
+        <translation><!-- Payment currency doesn&apos;t match authorisation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The bank account does not support Direct Debit.</masterLabel>
+        <translation><!-- The bank account does not support Direct Debit. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The specified bank account does not exist or was closed.</masterLabel>
+        <translation><!-- The specified bank account does not exist or was closed. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

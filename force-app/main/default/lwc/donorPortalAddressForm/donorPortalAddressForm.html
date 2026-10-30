@@ -1,0 +1,49 @@
+<template>
+    <div class="address-form">
+        <template if:false={hasCountryList}>
+            <p class="address-form__error" role="alert">
+                <span aria-hidden="true">⚠</span> We couldn't load the list of countries. Please refresh the page to try again.
+            </p>
+        </template>
+
+        <template if:true={hasCountryList}>
+            <div class="address-form__field">
+                <label for="street" class="address-form__label">Street</label>
+                <input id="street" type="text" autocomplete="address-line1" class="address-form__input" value={streetValue} oninput={handleStreetInput} />
+                <p if:true={streetError} class="address-form__error"><span aria-hidden="true">⚠</span> {streetError}</p>
+            </div>
+
+            <div class="address-form__field">
+                <label for="city" class="address-form__label">City</label>
+                <input id="city" type="text" autocomplete="address-level2" class="address-form__input" value={cityValue} oninput={handleCityInput} />
+                <p if:true={cityError} class="address-form__error"><span aria-hidden="true">⚠</span> {cityError}</p>
+            </div>
+
+            <div class="address-form__field">
+                <label for="country" class="address-form__label">Country</label>
+                <select id="country" class="address-form__input" autocomplete="country-name" onchange={handleCountryChange}>
+                    <template for:each={countryOptions} for:item="opt">
+                        <option key={opt.value} value={opt.value} selected={opt.selected}>{opt.label}</option>
+                    </template>
+                </select>
+                <p if:true={countryError} class="address-form__error"><span aria-hidden="true">⚠</span> {countryError}</p>
+            </div>
+
+            <div if:true={hasStates} class="address-form__field">
+                <label for="state" class="address-form__label">{stateLabel}</label>
+                <select id="state" class="address-form__input" autocomplete="address-level1" onchange={handleStateChange}>
+                    <template for:each={stateOptions} for:item="opt">
+                        <option key={opt.label} value={opt.value} selected={opt.selected}>{opt.label}</option>
+                    </template>
+                </select>
+                <p if:true={stateError} class="address-form__error"><span aria-hidden="true">⚠</span> {stateError}</p>
+            </div>
+
+            <div class="address-form__field">
+                <label for="postalCode" class="address-form__label">{postalCodeLabel}</label>
+                <input id="postalCode" type="text" autocomplete="postal-code" class="address-form__input" value={postalCodeValue} oninput={handlePostalCodeInput} />
+                <p if:true={postalCodeError} class="address-form__error"><span aria-hidden="true">⚠</span> {postalCodeError}</p>
+            </div>
+        </template>
+    </div>
+</template>

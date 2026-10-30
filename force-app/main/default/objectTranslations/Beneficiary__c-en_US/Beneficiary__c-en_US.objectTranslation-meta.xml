@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Beneficiary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Beneficiaries</value>
+    </caseValues>
+    <layouts>
+        <layout>Beneficiary Layout</layout>
+        <sections>
+            <label><!-- Accomodation --></label>
+            <section>Accomodation</section>
+        </sections>
+        <sections>
+            <label><!-- Aspirations --></label>
+            <section>Aspirations</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Father&apos;s Information --></label>
+            <section>Father&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Further Info --></label>
+            <section>Further Info</section>
+        </sections>
+        <sections>
+            <label><!-- Guardian&apos;s Information --></label>
+            <section>Guardian&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- Hobbies --></label>
+            <section>Hobbies</section>
+        </sections>
+        <sections>
+            <label><!-- Mother&apos;s Information --></label>
+            <section>Mother&apos;s Information</section>
+        </sections>
+        <sections>
+            <label><!-- School Information --></label>
+            <section>School Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Orphan Layout</layout>
+        <sections>
+            <label><!-- Accomodation --></label>
+            <section>Accomodation</section>
+        </sections>
+        <sections>
+            <label><!-- Aspirations --></label>
+            <section>Aspirations</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Info --></label>
+            <section>Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Father --></label>
+            <section>Father</section>
+        </sections>
+        <sections>
+            <label><!-- Further Info --></label>
+            <section>Further Info</section>
+        </sections>
+        <sections>
+            <label><!-- Guardian --></label>
+            <section>Guardian</section>
+        </sections>
+        <sections>
+            <label><!-- Hobbies --></label>
+            <section>Hobbies</section>
+        </sections>
+        <sections>
+            <label><!-- Mother --></label>
+            <section>Mother</section>
+        </sections>
+        <sections>
+            <label><!-- School Information --></label>
+            <section>School Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Student Layout</layout>
+        <sections>
+            <label><!-- Admission --></label>
+            <section>Admission</section>
+        </sections>
+        <sections>
+            <label><!-- Basic Info --></label>
+            <section>Basic Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Educational Background --></label>
+            <section>Educational Background</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Parent Information --></label>
+            <section>Parent Information</section>
+        </sections>
+        <sections>
+            <label><!-- Question and Answers --></label>
+            <section>Question and Answers</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Orphan --></label>
+        <name>Orphan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Student --></label>
+        <name>Student</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

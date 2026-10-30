@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Fundraisup_Emails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fundraisup Emails</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>Portal_Base_Url</fullName>
+        <categories>SAPA Portal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAPA Update Portal base URL</shortDescription>
+        <value>https://sudaneseamericanphysiciansassociat--stripestag.sandbox.my.site.com/update</value>
+    </labels>
+    <labels>
+        <fullName>Portal_Invalid_Link_Message</fullName>
+        <categories>SAPA Portal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generic message for any bad/expired/used/invalid portal token (doc rule 3)</shortDescription>
+        <value>We couldn&apos;t open this page.</value>
+    </labels>
+    <labels>
+        <fullName>Portal_Link_Validity_Days</fullName>
+        <categories>SAPA Portal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Number of days a SAPA Portal link stays valid</shortDescription>
+        <value>30</value>
+    </labels>
+    <labels>
+        <fullName>Portal_Reason_Text</fullName>
+        <categories>SAPA Portal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>POC reason line shown under the donor page greeting (doc section 9)</shortDescription>
+        <value>We want to make sure we can reach you with important updates from SAPA.</value>
+    </labels>
+    <labels>
+        <fullName>StripeKey</fullName>
+        <categories>Stripe</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StripeKey</shortDescription>
+        <value>pk_test_REDACTED</value>
+    </labels>
+    <labels>
+        <fullName>StripeWebsecret</fullName>
+        <categories>StripeWebsecret</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StripeWebsecret</shortDescription>
+        <value>whsec_REDACTED</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Secret</fullName>
+        <categories>StripeSecret</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StripeSecret</shortDescription>
+        <value>sk_test_REDACTED</value>
+    </labels>
+</CustomLabels>

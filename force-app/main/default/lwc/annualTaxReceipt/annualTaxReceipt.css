@@ -1,0 +1,4 @@
+.combobox-container {
+    display: flex;
+    gap: 10px; /* Adjust spacing between the comboboxes */
+}

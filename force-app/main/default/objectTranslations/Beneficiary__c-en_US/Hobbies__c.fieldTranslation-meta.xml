@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hobbies --></label>
+    <name>Hobbies__c</name>
+    <picklistValues>
+        <masterLabel>arts</masterLabel>
+        <translation><!-- arts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>athletics</masterLabel>
+        <translation><!-- athletics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>badminton</masterLabel>
+        <translation><!-- badminton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>basketball</masterLabel>
+        <translation><!-- basketball --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>board games</masterLabel>
+        <translation><!-- board games --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>charity work</masterLabel>
+        <translation><!-- charity work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>co-curricular activities</masterLabel>
+        <translation><!-- co-curricular activities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>collecting cards</masterLabel>
+        <translation><!-- collecting cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>collecting coins</masterLabel>
+        <translation><!-- collecting coins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>collecting hair bands</masterLabel>
+        <translation><!-- collecting hair bands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>collecting pictures</masterLabel>
+        <translation><!-- collecting pictures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>collecting stamps</masterLabel>
+        <translation><!-- collecting stamps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>collecting toys</masterLabel>
+        <translation><!-- collecting toys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>coloring</masterLabel>
+        <translation><!-- coloring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>colouring</masterLabel>
+        <translation><!-- colouring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>computers</masterLabel>
+        <translation><!-- computers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cooking</masterLabel>
+        <translation><!-- cooking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cricket</masterLabel>
+        <translation><!-- cricket --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cycling</masterLabel>
+        <translation><!-- cycling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>debating</masterLabel>
+        <translation><!-- debating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>doll making</masterLabel>
+        <translation><!-- doll making --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>drama</masterLabel>
+        <translation><!-- drama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>drawing/painting</masterLabel>
+        <translation><!-- drawing/painting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fishing</masterLabel>
+        <translation><!-- fishing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flower arranging</masterLabel>
+        <translation><!-- flower arranging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>football</masterLabel>
+        <translation><!-- football --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>games</masterLabel>
+        <translation><!-- games --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>gardening</masterLabel>
+        <translation><!-- gardening --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>handicrafts</masterLabel>
+        <translation><!-- handicrafts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hiking</masterLabel>
+        <translation><!-- hiking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hockey</masterLabel>
+        <translation><!-- hockey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>horse riding</masterLabel>
+        <translation><!-- horse riding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>knitting</masterLabel>
+        <translation><!-- knitting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>learning languages</masterLabel>
+        <translation><!-- learning languages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mathematics</masterLabel>
+        <translation><!-- mathematics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>meeting friends</masterLabel>
+        <translation><!-- meeting friends --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>nasheeds</masterLabel>
+        <translation><!-- nasheeds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>performing arts</masterLabel>
+        <translation><!-- performing arts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pets</masterLabel>
+        <translation><!-- pets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>playing</masterLabel>
+        <translation><!-- playing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>playing games</masterLabel>
+        <translation><!-- playing games --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>poetry</masterLabel>
+        <translation><!-- poetry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>reading</masterLabel>
+        <translation><!-- reading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>reciting Quran</masterLabel>
+        <translation><!-- reciting Quran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>riding</masterLabel>
+        <translation><!-- riding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sewing</masterLabel>
+        <translation><!-- sewing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sports</masterLabel>
+        <translation><!-- sports --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>stamp collecting</masterLabel>
+        <translation><!-- stamp collecting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>story writing</masterLabel>
+        <translation><!-- story writing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>studying</masterLabel>
+        <translation><!-- studying --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>swimming</masterLabel>
+        <translation><!-- swimming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tennis</masterLabel>
+        <translation><!-- tennis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>travel</masterLabel>
+        <translation><!-- travel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>volleyball</masterLabel>
+        <translation><!-- volleyball --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>walking</masterLabel>
+        <translation><!-- walking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>watching films</masterLabel>
+        <translation><!-- watching films --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>watching television</masterLabel>
+        <translation><!-- watching television --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>writing</masterLabel>
+        <translation><!-- writing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

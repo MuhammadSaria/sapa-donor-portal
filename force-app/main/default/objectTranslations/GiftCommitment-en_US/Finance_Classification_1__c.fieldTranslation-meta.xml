@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Finance Classification 1 --></label>
+    <name>Finance_Classification_1__c</name>
+    <picklistValues>
+        <masterLabel>Donor Care</masterLabel>
+        <translation><!-- Donor Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Management</masterLabel>
+        <translation><!-- Executive Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundraising</masterLabel>
+        <translation><!-- Fundraising --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencers-LG</masterLabel>
+        <translation><!-- Influencers-LG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MarComms</masterLabel>
+        <translation><!-- MarComms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Programmes</masterLabel>
+        <translation><!-- Programmes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

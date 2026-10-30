@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Grant_Payment__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Grant Payments</description>
+    <label>Grant Payments</label>
+    <sections>
+        <masterLabel>Grant Payments</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Program</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Grant</masterLabel>
+    </sections>
+</ReportType>

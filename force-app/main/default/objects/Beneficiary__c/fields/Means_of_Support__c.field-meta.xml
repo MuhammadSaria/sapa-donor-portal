@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Means_of_Support__c</fullName>
+    <label>Means of Support</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>charitable donations</fullName>
+                <default>false</default>
+                <label>charitable donations</label>
+            </value>
+            <value>
+                <fullName>community support</fullName>
+                <default>false</default>
+                <label>community support</label>
+            </value>
+            <value>
+                <fullName>employment</fullName>
+                <default>false</default>
+                <label>employment</label>
+            </value>
+            <value>
+                <fullName>family income support</fullName>
+                <default>false</default>
+                <label>family income support</label>
+            </value>
+            <value>
+                <fullName>family support</fullName>
+                <default>false</default>
+                <label>family support</label>
+            </value>
+            <value>
+                <fullName>friends support</fullName>
+                <default>false</default>
+                <label>friends support</label>
+            </value>
+            <value>
+                <fullName>handouts</fullName>
+                <default>false</default>
+                <label>handouts</label>
+            </value>
+            <value>
+                <fullName>loans</fullName>
+                <default>false</default>
+                <label>loans</label>
+            </value>
+            <value>
+                <fullName>neighbours support</fullName>
+                <default>false</default>
+                <label>neighbours support</label>
+            </value>
+            <value>
+                <fullName>pension</fullName>
+                <default>false</default>
+                <label>pension</label>
+            </value>
+            <value>
+                <fullName>refugee allowance</fullName>
+                <default>false</default>
+                <label>refugee allowance</label>
+            </value>
+            <value>
+                <fullName>savings</fullName>
+                <default>false</default>
+                <label>savings</label>
+            </value>
+            <value>
+                <fullName>temporary work</fullName>
+                <default>false</default>
+                <label>temporary work</label>
+            </value>
+            <value>
+                <fullName>unspecified</fullName>
+                <default>false</default>
+                <label>unspecified</label>
+            </value>
+            <value>
+                <fullName>farming</fullName>
+                <default>false</default>
+                <label>farming</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
